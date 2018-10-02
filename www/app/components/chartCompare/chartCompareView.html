@@ -1,0 +1,35 @@
+<container-fluid>
+
+  <div class="row">
+    <div class="col-sm-12" style="margin:20px 0px"><a class="btn btn-secondary" ui-sref="home" role="button"><i class="glyphicon glyphicon-chevron-left"></i> {{ 'general.back' | translate }}</a></div>
+
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+      <div class="panel">
+        <div class="row border-bottom" >
+          <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+            <h5 class="graph-title"><span style="color: rgb(125, 187, 66); font-size:18px; font-weight:bold;">{{city1}}</span> <span style="color: #666666; font-size:12px;"></span> - <span style="color: #f73a3a; font-size:18px; font-weight:bold;">{{city2}}</span> <span style="color: #666666; font-size:12px;"></span></h5>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+            <select ng-model="selectedRange" ng-options="dateRange as dateRange.name for dateRange in rangeOptions" ng-change="vm.chartChange()">
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+
+            <chart-compare id="AQHistoryChartCompare" type="barChart">
+            </chart-compare>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <footer-section></footer-section>
+  </div>
+</container-fluid>
+

@@ -1,0 +1,48 @@
+    <nav class="navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">{{ 'landingnavigation.toggle_navigation' | translate }}</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" >
+            <img src="/img/logo_hack_a_i_r_small_rect_light_b_g.svg" height="64px"/>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right landing-nav">
+            <li><a href="http://hackair.eu/" target="_self">{{'landing.about.menu_heading' | translate}}</a></li>
+            <li><a href="/" ui-sref="about" ui-sref-active="active">{{'landing.how_it_works.menu_heading' | translate}}</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{'landing.register.menu_heading' | translate}} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <login></login>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" ng-model="vm.language">{{vm.language}}<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a ng-click="vm.changeLanguage('en')">{{ 'BUTTON_LANG_EN' | translate }}</a></li>
+                <li><a ng-click="vm.changeLanguage('de')">{{ 'BUTTON_LANG_DE' | translate }}</a></li>
+                <li><a ng-click="vm.changeLanguage('no')">{{ 'BUTTON_LANG_NO' | translate }}</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- citySearch homePage nonLoggedIn Status -->
+      <style>
+        .city-search-autocomplete { padding-left:5px; z-index: 500; text-align: center; line-height: 32px; }
+      </style>
+
+      <div>
+        <city-search placeholder="{{ 'search_place' | translate }}" ng-model="vm.cityHome" required name="address" location-changed="vm.locationChanged" searchmap="true" radius="150000"/>
+      </div>
+
+    </nav>

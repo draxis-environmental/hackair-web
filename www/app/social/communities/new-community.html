@@ -1,0 +1,94 @@
+<section class="social">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="search item">
+            <h3>{{'communities.search_heading' | translate}}</h3>
+            <input type="text" placeholder="{{'social.search_placeholder' | translate}}"  ng-model="vm.asyncSelected" uib-typeahead="person.name for person in vm.search($viewValue)"
+            typeahead-loading="loadingLocations" typeahead-no-results="noResults" typeahead-on-select="onSelect($item)">
+            <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+            <div ng-show="noResults">
+              <i class="glyphicon glyphicon-remove"></i> {{ 'community.no_results' | translate }}
+            </div>
+          </div>
+          <hr>
+          <div class="news-feed item">
+            <h3>{{'communities.my_news_feed_heading' | translate}}</h3>
+          </div>
+          <hr>
+          <div class="my-communities">
+            <h3>{{'social.my_communities_heading' | translate}}</h3>
+            <ul class="list-group">
+              <li ng-repeat="community in vm.communities" style="padding: 10px 0px;">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img ng-src="{{community.profile_picture || 'img/u_i_community_avatar_empty.svg'}}" />
+                  </div>
+                  <div class="col-xs-7">
+                    <h2><a ui-sref="community({id:'{{community.id}}'})">{{ community.name }}</a></h2>
+                  </div>
+                  <div class="col-xs-3">
+                    <button class="button button-calm pull-right" ng-if="vm.amCommunityOwner(community.owner_id)" ui-sref="edit-community.update({id:'{{community.id}}'})">{{'communities.edit.navigation.edit' | translate}}</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="new-community item">
+            <a class="text-center">
+              <img src="/img/icons/icon_small_create.svg">
+              {{ 'communities.create_new' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-9">
+        <div class="card">
+          <div class="add-community">
+            <h3>{{'communities.new' | translate}}</h3>
+
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+                <div class="avatar">
+                  <img class="avatar-icon" ng-src="{{ 'img/ui/u_i_avatar_empty_rounded.svg' }}" />
+                  <img class="icon-square-edit" src="/img/ui/icon_square_edit.svg">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-8">
+                <div class="input">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <span class="input-label" aria-label="Community">{{'communities.name' | translate}}</span>
+                    </div>
+                    <div class="col-xs-8">
+                      <input type="text" ng-model="vm.community.name">
+                    </div>
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <span class="input-label" aria-label="Community">{{'communities.description' | translate}}</span>
+                    </div>
+                    <div class="col-xs-8">
+                      <input type="text" ng-model="vm.community.description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-xs-7 col-xs-offset-5 col-sm-5 col-sm-offset-7 buttons">
+                <button class="button button-assertive" ng-click="vm.returnToCommunity()">{{'cancel' | translate}}</button>
+                <button class="button button-calm" ng-click="vm.createCommunity()">{{'create' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer-section></footer-section>

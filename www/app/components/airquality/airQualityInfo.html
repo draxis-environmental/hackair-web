@@ -1,0 +1,65 @@
+<div class="airquality">
+  <img class="" ng-src="{{vm.image}}" ng-show="vm.quality !== undefined" />
+  <div class="air-quality-info {{vm.quality}}" ng-show="vm.quality !== undefined">
+    <h6 ng-if="vm.showActivities">{{ vm.currentTime }}</h6>
+    <h2>{{ 'air_quality.air_quality_is' | translate }}</h2>
+
+    <h1>{{ 'air_quality.' + vm.quality | translate }}
+      <a href="#" uib-popover-template="'/app/components/disclaimers/measurements.html'"
+        popover-class="disclaimers" popover-trigger="'mouseenter'" popover-placement="bottom-left" class="more-info">
+        <img src="/img/icon_small_info.svg" />
+      </a>
+    </h1>
+    <!--<a href="#" ng-click="vm.showHistory()"><img src="/img/icon_small_history.svg" /> {{ 'air_quality.history' | translate }}</a>-->
+    <a href="#" ng-click="vm.share()">
+      <img src="/img/icon_small_share.svg" /> {{ 'air_quality.share' | translate }}</a>
+
+    <div ng-if="vm.scale" class="scale">
+      <img src="/img/airquality/scale-sm2.png" height="36px" />
+    </div>
+  </div>
+  <div class="air-quality-info" ng-if="vm.unsupported">
+    <h6>{{ 'air_quality.disclaimers.disclaimer_unsupportedcity' | translate }}</h6>
+  </div>
+  <ul class="" style="list-style: none;padding-left: 0;" ng-if="vm.showActivities && vm.showRecommendations">
+    <li>Primary Profile</li>
+  </ul>
+  <ul id="primary-profile" class="activities" ng-if="vm.showActivities && vm.showRecommendations" data-toggle="popover" data-content="{{vm.quote}}">
+    <li class="running" ng-if="vm.texts.running" ng-mouseover="vm.setActive('running' , false , 'primary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="walking" ng-if="vm.texts.walking" ng-mouseover="vm.setActive('walking' , false , 'primary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="cycling" ng-show="vm.texts.cycling" ng-mouseover="vm.setActive('cycling' , false , 'primary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="pets" ng-show="vm.texts.pets" ng-mouseover="vm.setActive('pets' , false , 'primary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="park" ng-show="vm.texts.park" ng-mouseover="vm.setActive('park' , false , 'primary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="picnic" ng-show="vm.texts.picnic" ng-mouseover="vm.setActive('picnic' , false , 'primary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="work" ng-show="vm.texts.work" ng-mouseover="vm.setActive('work' , false , 'primary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="disclaimers" ng-if="isObjectEmpty(vm.texts)">
+      <a href="#" uib-popover-template="'/app/components/disclaimers/recommendations.html'" popover-class="disclaimers" popover-trigger="'mouseenter'"
+        popover-placement="bottom-left" class="more-info recommendations">
+        <img src="/img/icon_small_info.svg" />
+      </a>
+    </li>
+  </ul>
+  <ul class="" style="list-style: none;padding-left: 0;" ng-if="vm.showActivities && vm.showRecommendations && vm.textsSecondary">
+    <li>Secondary Profile</li>
+  </ul>
+  <ul id="secondary-profile" class="activities" ng-if="vm.showActivities && vm.showRecommendations && vm.textsSecondary" data-toggle="popover" data-content="{{vm.quote}}">
+    <li class="running" ng-if="vm.textsSecondary.running" ng-mouseover="vm.setActive('running' , true , 'secondary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="walking" ng-if="vm.textsSecondary.walking" ng-mouseover="vm.setActive('walking' , true , 'secondary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="cycling" ng-show="vm.textsSecondary.cycling" ng-mouseover="vm.setActive('cycling' , true , 'secondary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="pets" ng-show="vm.textsSecondary.pets" ng-mouseover="vm.setActive('pets' , true , 'secondary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="park" ng-show="vm.textsSecondary.park" ng-mouseover="vm.setActive('park' , true , 'secondary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="picnic" ng-show="vm.textsSecondary.picnic" ng-mouseover="vm.setActive('picnic' , true , 'secondary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="work" ng-show="vm.textsSecondary.work" ng-mouseover="vm.setActive('work' , true , 'secondary-profile')" ng-mouseleave="vm.hidePopover()"></li>
+    <li class="disclaimers" ng-if="isObjectEmpty(vm.textsSecondary)">
+      <a href="#" uib-popover-template="'/app/components/disclaimers/recommendations.html'" popover-class="disclaimers" popover-trigger="'mouseenter'"
+        popover-placement="bottom-left" class="more-info recommendations">
+        <img src="/img/icon_small_info.svg" />
+      </a>
+    </li>
+  </ul>
+  <p ng-if="vm.showActivities && vm.showRecommendations">
+    <!-- Translate this in controller -->
+    <!-- {{ vm.quote }} -->
+  </p>
+
+</div>

@@ -1,0 +1,154 @@
+<section class="profile">
+  <div class="container">
+    <div class="row">
+      <!--Left column-->
+      <div class="col-xs-12 col-md-4 no-padding">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="card">
+              <button class="button button-calm button-edit" ui-sref="profile.edit.details">{{ 'general.edit' | translate }}</button>
+              <div class="header">
+                <div class="avatar text-center">
+                  <img height="120px" width="120px" class="img img-circle" ng-src="{{ vm.profile.profile_picture || 'img/u_i_avatar_empty.svg' }}"
+                  />
+                </div>
+                <h4>{{'@' + vm.profile.username || '@Username'}}</h4>
+                <h5>{{ vm.profile.name || '' }} {{ vm.profile.surname || '' }}</h5>
+
+              </div>
+              <hr class="soft-separator">
+              <li class="item no-padding">
+
+                <div class="info">
+
+                  <div class="level-box">
+                    <h6 style="font-size:16px;">
+                      <img src="/img/icons/icon_small_podium_inactive.svg" /> {{ vm.profile.level.name }}
+                      <div class="level-info" data-toggle="popover" title="Profile Levels" data-content="{{vm.popOverContent}}" data-html="true">
+                        <i class="fa fa-info"></i>
+                      </div>
+                    </h6>
+                    <div class="level-container">
+                      <div class="level" style="width:{{vm.profile.progress}}%"></div>
+                    </div>
+                    <div class="points">{{vm.profile.points}} {{ 'profile.points' | translate }} </div>
+                  </div>
+
+                </div>
+
+                <!-- hack for inline-block + 50% width -->
+                <hr class="soft-separator">
+                <div class="location-box">
+                  <h6>
+                    <img src="/img/icons/icon_small_pin_inactive.svg" /> {{ vm.profile.location_str || 'no_location' | translate }}
+                  </h6>
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="card">
+              <div class="header">
+                <h3>{{'profile.private_info_heading' | translate}}</h3>
+              </div>
+              <hr class="hard-separator">
+              <div class="content">
+                <div class="row">
+                  <div class="col">
+                    <span class="title">{{'profile.age' | translate}}: </span>
+                    <span class="attr-value">{{ vm.profile.age || 'N/A' }}</span>
+                  </div>
+                  <div class="col">
+                    <span class="title">{{'profile.groups' | translate}}: </span>
+                    <span class="attr-value">{{ vm.profile.groupsString || 'N/A' }}</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="title">{{'profile.gender' | translate}}: </span>
+                    <span class="attr-value">{{ vm.profile.gender || 'N/A' }}</span>
+                  </div>
+                  <div class="col">
+                    <span class="title">{{'profile.outdoor_activities' | translate}}: </span>
+                    <span class="attr-value">{{ vm.profile.outdoorActivitiesString || 'N/A' }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="card">
+              <div class="header">
+                <h3>{{'profile.communities' | translate}}</h3>
+              </div>
+              <hr class="hard-separator">
+              <!--
+                      <div class="content no-padding">
+                        <div class="row">
+                          <div class="col-xs-6 text-center no-padding">
+                            <img src="../../img/temp/thumbnail.png" alt="community thumbnail" class="img-rounded community-img">
+                            <div class="caption">
+                              <h3>Kingston Airhackers</h3>
+                            </div>
+                          </div>
+                          <div class="col-xs-6 text-center no-padding">
+                            <img src="../../img/temp/thumbnail.png" alt="community thumbnail" class="img-rounded community-img">
+                            <div class="caption">
+                              <h3>Kingston Airhackers</h3>
+                            </div>
+                          </div>
+                          <div class="col-xs-6 text-center no-padding">
+                            <img src="../../img/temp/thumbnail.png" alt="community thumbnail" class="img-rounded community-img">
+                            <div class="caption">
+                              <h3>Kingston Airhackers</h3>
+                            </div>
+                          </div>
+                          <div class="col-xs-6 text-center no-padding">
+                            <img src="../../img/temp/thumbnail.png" alt="community thumbnail" class="img-rounded community-img">
+                            <div class="caption">
+                              <h3>Kingston Airhackers</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    -->
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="public">
+              <h6 class="option">{{ 'profile.make_my_profile_public' | translate }}</h6>
+              <label class="toggle">
+                <input type="checkbox" ng-checked="!vm.profile.private" ng-click="vm.togglePrivacy()">
+                <div class="track">
+                  <div class="handle"></div>
+                </div>
+              </label>
+              <a href="#" uib-popover-template="'/app/profile/public.profile.disclaimer.html'" popover-class="disclaimers" popover-trigger="'mouseenter'"
+                popover-placement="bottom-center" class="more-info">
+                <h6 class="option-info">&nbsp;{{ 'profile.what_does_this_mean' | translate }}</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- / Left column -->
+      <!--Right column-->
+
+
+
+      <div class="col-xs-12 col-md-8 no-padding">
+        <div class="card">
+          <!-- Tab panes -->
+          <ui-view></ui-view>
+
+        </div>
+
+      </div>
+      <!-- / Right column-->
+    </div>
+  </div>
+</section>
+<footer-section></footer-section>

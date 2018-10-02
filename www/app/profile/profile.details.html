@@ -1,0 +1,146 @@
+<section class="profile edit">
+  <div class="card list info">
+    <div class="header">
+      <h3>{{'profile.heading' | translate}}</h3>
+      <div class="avatar" ng-click="vm.getPhoto()">
+        <img class="img-circle" height="80px" ng-src="{{ vm.profile.profile_picture || 'img/u_i_avatar_empty.svg' }}" />
+        <span class="icon-edit"></span>
+      </div>
+    </div>
+    <div class="row input">
+      <div class="col-xs-12 col-sm-2">
+        <span class="input-label">{{ 'dtlprofile.username' | translate }}</span>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <span class="input-label">{{vm.profile.username}}</span>
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2">
+            <span class="input-label">{{'profile.surname' | translate}}</span>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="text" ng-model="vm.profile.surname">
+          </div>
+        </div> -->
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        {{ 'auth.username' |translate }}
+      </div>
+    </div>
+    <div class="card list">
+      <div class="item item-divider">
+        {{ 'profile.personal_info' | translate }}
+      </div>
+      <div class="col-sm-12">
+        {{ 'setprofile.receive_personal_recommendation' |translate }}
+      </div>
+      <div class="input">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+            <span class="input-label">{{'profile.location_placeholder' | translate}}</span>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+            <!--<input type="text" >-->
+            <style>
+              .city-search-autocomplete {
+                padding-left: 0px !important;
+                margin-left: -15px;
+                line-height: 26px !important;
+              }
+
+            </style>
+            <city-search placeholder="{{ 'profile.location_placeholder' | translate }}" ng-model="vm.profile.location_str" required name="address"
+              location-changed="vm.locationChanged" radius="150000" />
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+            <span class="input-label">{{'profile.year_of_birth' | translate}}</span>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+            <input class="year-input" type="number" ng-model="vm.profile.year_of_birth" />
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+            <div class="input-label">
+              {{'profile.gender' | translate}}
+            </div>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+            <select name="gender" ng-model="vm.profile.gender">
+              <option value="female"></option>
+              <option value="female">{{'profile.genders.female' | translate}}</option>
+              <option value="male">{{'profile.genders.male' | translate}}</option>
+              <option value="other">{{'profile.genders.other' | translate}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+            <div class="input-label">
+              {{'profile.language' | translate}}
+            </div>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+            <select name="language" ng-model="vm.profile.language">
+              <option value="english">{{'profile.languages.english' | translate}}</option>
+              <option value="german">{{'profile.languages.german' | translate}}</option>
+              <option value="norwegian">{{'profile.languages.norwegian' | translate}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+            <div class="input-label">{{'profile.sensitivities' | translate}}</div>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+            <ui-select multiple ng-model="vm.selectedSensitivities" theme="bootstrap" close-on-select="false" tagging>
+              <ui-select-match placeholder="Select sensitivities">{{$item.name}}</ui-select-match>
+              <ui-select-choices repeat="sensitivity in vm.sensitivities | filter: {name:$select.search}">
+                {{sensitivity.name}}
+              </ui-select-choices>
+            </ui-select>
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+            <div class="input-label">{{'profile.outdoor_activities' | translate}}</div>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+            <ui-select multiple ng-model="vm.selectedActivities" theme="bootstrap" close-on-select="false" tagging name="outdoor-activities">
+              <ui-select-match placeholder="Select an activity">{{$item.name}}</ui-select-match>
+              <ui-select-choices repeat="activity in vm.outdoor_activities | filter: {name:$select.search}">
+                {{activity.name}}
+              </ui-select-choices>
+            </ui-select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <secondary-profile ng-show="vm.profile.secondary_profile.show"></secondary-profile>
+    <div class="row photo-actions">
+      <div class="col-xs-5 col-xs-offset-4 col-sm-7">
+        <h6 class="option">{{'profile.want_secondary_profile' | translate}}
+          <label class="toggle">
+            <input type="checkbox" ng-model="vm.profile.secondary_profile.show">
+          </label>
+        </h6>
+      </div>
+      <div class="col-xs-7 col-xs-offset-4 col-sm-5 col-sm-offset-5">
+        <button ui-sref="profile.overview" class="button button-cancel">{{'cancel' | translate}}</button>
+        <button class="button button-save" ng-click="vm.updateProfile()">{{'save' | translate}}</button>
+      </div>
+    </div>
+
+</section>

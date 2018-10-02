@@ -1,0 +1,202 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+
+$light: #fff !default;
+$positive: #387ef5 !default;
+$balanced: #33cd5f !default;
+$energized: #ffc900 !default;
+$royal: #886aea !default;
+$dark: #444 !default;
+$assertive: #ff6666 !default;
+$azureish-white: #e0f4f5 !default;
+$maastricht-blue: #022b3a !default;
+$polished-pine: #5aaa95 !default;
+$teal-blue: #00a3ac !default;
+*:focus,
+*:focus:active,
+*:active:focus,
+  {
+  outline: none !important;
+}
+
+body,
+html,
+.container,
+.container-fluid,
+ui-view {
+  min-height: 100%;
+}
+
+.card {
+  margin: 20px;
+  background: $light;
+  box-shadow: 0 1px 2px $teal-blue;
+}
+
+// Utility classes
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+#loading-bar .bar {
+  background: $assertive !important;
+}
+
+#loading-bar-spinner .spinner-icon {
+  border-top-color: $assertive !important;
+  border-left-color: $assertive !important;
+}
+
+.no-right-padding {
+  padding-right: 0;
+}
+
+.button-calm {
+  min-height: 24px;
+  max-height: 24px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-family: "noto_sansbold";
+  font-size: 11px;
+  box-shadow: 0px 2px 2px rgba(1, 43, 58, 0.24);
+  color: white;
+  background-color: $teal-blue;
+  border: none;
+  border-radius: 2px;
+}
+
+.button-assertive {
+  min-height: 24px;
+  max-height: 24px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-family: "noto_sansbold";
+  font-size: 11px;
+  box-shadow: 0px 2px 2px rgba(1, 43, 58, 0.24);
+  color: white;
+  background-color: $assertive;
+  border: none;
+  border-radius: 2px;
+}
+
+.nav-tabs {
+  text-align: center;
+  border-bottom: solid 2px rgba(0, 163, 172, 0.6);
+  &>li {
+    display: inline-block;
+    width: 16.6%;
+    &>a {
+      margin: 0;
+      padding: 5px 10px;
+      font-family: 'noto_sansregular';
+      transition: 0.3s ease;
+      box-shadow: none;
+      font-size: 14px;
+    }
+    &.active {
+      &>a,
+      &>a:focus {
+        outline: none;
+        margin: 0;
+        font-family: 'noto_sansbold';
+        box-shadow: 0 -2px 0px rgba(0, 163, 172, 0.6) inset;
+      }
+    }
+  }
+}
+
+.popup-dialog .popup-content .popup-footer {
+  height: 100% !important;
+}
+
+.popup-dialog .popup-content .popup-header .popup-badge {
+  margin: 20px auto -10px auto !important;
+}
+
+.popup-dialog .popup-content .popup-body p {
+  width: 234px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  padding: 0px 0px !important;
+}
+
+.explanationTitle {}
+
+.historyTable {
+  font-size: 14px;
+}
+
+.explanationTitle {
+  color: #666666;
+  padding-left: 15px;
+}
+
+.explanationText {
+  padding: 20px 0px 10px 30px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.indexRange {
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+
+.indexRange.bad {
+  background-color: rgb(239, 71, 35);
+}
+
+.indexRange.medium {
+  background-color: rgb(246, 142, 31);
+}
+
+.indexRange.good {
+  background-color: rgb(254, 204, 9);
+}
+
+.indexRange.very_good {
+  background-color: rgb(125, 187, 66);
+}
+
+.spacerow {
+  border-bottom: 2px solid white;
+}
+
+.blink_me {
+  animation: blinker 4s linear infinite;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 12px;
+  padding: 2px 0px 2px 0px;
+  text-align: center;
+  background-color: #ff5958;
+  color: white;
+}
+
+@keyframes blinker {
+  40% {
+    opacity: 0;
+  }
+}
+
+.footer_copyright a {
+  color: #00a3ac;
+}
+
+.footer_copyright a:hover {
+  color: black;
+}
+
+#card-table {
+  display: none;
+  margin-top: 30px;
+}

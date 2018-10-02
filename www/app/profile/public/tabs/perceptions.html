@@ -1,0 +1,51 @@
+<!-- Nav tabs -->
+
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a ui-sref="public.overview" aria-controls="overview" role="tab">{{'profile.navigation.overview' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.achievements" aria-controls="achievements" role="tab">{{'profile.navigation.achievements' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.photos" aria-controls="photos" role="tab">{{'profile.navigation.photos' | translate}}</a></li>
+    <li role="presentation" class="active"><a ui-sref="public.perceptions" aria-controls="perceptions" role="tab">{{'profile.navigation.perceptions' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.sensors" aria-controls="sensors" role="tab">{{'profile.navigation.sensors' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.followers" aria-controls="followers" role="tab">{{'profile.navigation.followers' | translate}}</a></li>
+</ul>
+<div class="tab-content">
+    <!-- Perceptions -->
+    <div role="tabpanel" class="tab-pane active" id="perceptions">
+      <div  class="content">
+        <h3>{{ vm.profile.name || '@' + vm.profile.username }}'s {{'profile.perceptions.public_perceptions_heading' | translate}}</h3>
+        <!-- map view -->
+        <!---
+        <div class="row">
+            <div class="col-xs-12 perception-map">
+            <img src="../../img/u_i_pin_perception.svg">
+            </div>
+        </div>
+        -->
+        <!-- / map view-->
+        <!-- rows of perceptions-->
+        <div class="row">
+          <div ng-if="vm.perceptions.length == 0">
+            <span>{{ 'submitperceptions.user_not_submit_perceptions' | translate }}</span>
+          </div>
+            <!-- for each perception  -->
+            <div class="col-xs-12 col-sm-6" ng-repeat="perception in vm.perceptions">
+              <div class="row">
+                  <div class="col-xs-2 no-padding text-right">
+                    <img src="../../img/icons/icon_small_pin_inactive.svg" class="perception-pin" alt="pin">
+                  </div>
+                  <div class="col-xs-7 no-padding">
+                    <p style="text-transform: capitalize;">{{perception.perception }}</p>
+                    <p class="contr-date">{{perception.created_at | date}}</p>
+                  </div>
+                  <div class="col-xs-3 no-padding">
+                    <img src="/img/airquality/illustration_face_{{perception.perception}}.png" alt="smiley" height="40px" width="40px">
+                  </div>
+              </div>
+            </div>
+            <!-- / for each perception -->
+
+        </div>  <!-- / rows of perceptions-->
+      </div>
+    </div>
+    <!-- / Perceptions -->
+</div>

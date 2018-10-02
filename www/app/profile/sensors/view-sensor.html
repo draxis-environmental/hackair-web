@@ -1,0 +1,70 @@
+<profile-navigation></profile-navigation>
+<div class="tab-content">
+  <!-- Sensors -->
+  <div role="tabpanel" class="tab-pane active" id="sensors">
+    <div class="content">
+      <h3>
+        <a href="/profile/{{user.id}}/sensors">
+          <img src="/img/temp/arrow_left.png">
+        </a>{{vm.sensor.name}}
+        <button class="button button-calm button-edit" ng-click="vm.editSensor()">{{'sensor.edit' | translate}}</button>
+      </h3>
+
+      <button class="btn btn-danger btn-delete-sensor" mwl-confirm title="<b>{{'profile.sensors.delete_sensor_title' | translate}}</b>"
+        message="{{'profile.sensors.confirm_delete' | translate}}" confirm-text="{{ confirmText }}" cancel-text="{{ cancelText }}"
+        placement="{{ placement }}" on-confirm="vm.deleteSensor()" on-cancel="cancelClicked = true" confirm-button-type="danger"
+        cancel-button-type="default">
+        {{'profile.sensors.delete_sensor_title' | translate}}</button>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 text-right">
+          <span class="access-key"> {{'sensor.access_key' | translate}}: {{vm.sensor.access_key}}</span>
+        </div>
+      </div>
+      <!-- map view -->
+      <div class="row" ng-hide="vm.sensor.type === 'bleair'">
+        <div class="col-xs-12 sensor-map" id="map">
+
+        </div>
+      </div>
+      <!-- / map view -->
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-8">
+          <h2>{{'sensor.sensor_measurements_heading' | translate}}</h2>
+        </div>
+        <div class="col-xs-12 col-sm-4 ">
+          <button style="position: relative; top: 30px;" class="btn button-follows-b pull-right" ng-click="vm.exportExcel()">{{ 'viewsensor.export_measurements' | translate }}*</button>
+          <!-- <button class="button button-follows-b pull-right">{{'sensor.export_data' | translate}}</button> -->
+        </div>
+      </div>
+      <small style="font-size: 10px;" class="pull-right">{{ 'only_measurement' | translate }}</small>
+      <div class="row">
+        <div id="card-table" class="col-xs-12 col-sm-12">
+          <table id="example" class="table display" style="width:100%">
+            <thead>
+              <tr>
+                <th>{{ 'time' | translate }}</th>
+                <th>{{ 'pollutant' | translate }}</th>
+                <th>{{ 'value' | translate }}</th>
+                <th>{{ 'meter' | translate }}</th>
+              </tr>
+            </thead>
+          </table>
+          <ul class="no-padding">
+            <li class="measurement" ng-repeat="measurement in vm.sensor.measurements">
+              <span class="log-title">{{ measurement.date_str | date : 'yyyy/MM/dd @ HH:mm' }}</span>
+              <br/>{{measurement.pollutant_i.name.split('_')[0]}} = {{measurement.pollutant_q.value}} {{measurement.pollutant_q.unit}}
+              <br/>meter: {{measurement.pollutant_i.index}}</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 vertical-line">
+        </div>
+        <div class="col-xs-12 col-sm-4 vertical-line">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<div class="card list">
+  <div class="item item-divider">
+    {{ 'profile.secondary_profile_info' | translate }}
+  </div>
+  <!--
+  <div class="input">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+        <span class="input-label">{{'profile.location' | translate}}</span>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+        <input type="text" >
+        <city-search placeholder="Secondary profile address" ng-model="vm.profile.secondary_profile.details.location_str" required name="address"  location-changed="vm.secondaryProfileLocationChanged" radius="150000"/>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- <div class="input">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+        <span class="input-label">Username</span>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+        <input type="text" ng-model="vm.profile.secondary_profile.details.firstname" />
+      </div>
+    </div>
+  </div> -->
+  <div class="input">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+        <span class="input-label">{{'profile.year_of_birth' | translate}}</span>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+        <input class="year-input" type="number" ng-model="vm.profile.secondary_profile.details.year_of_birth" />
+      </div>
+    </div>
+  </div>
+  <div class="input">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+        <div class="input-label">
+          {{'profile.gender' | translate}}
+        </div>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+        <select name="gender" ng-model="vm.profile.secondary_profile.details.gender">
+          <option value="female">{{'profile.genders.female' | translate}}</option>
+          <option value="male">{{'profile.genders.male' | translate}}</option>
+          <option value="other">{{'profile.genders.other' | translate}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="input">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+        <div class="input-label">{{'profile.sensitivities' | translate}}</div>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+        <ui-select multiple ng-model="vm.profile.secondary_profile.details.selectedSensitivities" theme="bootstrap" close-on-select="false"
+          tagging>
+          <ui-select-match placeholder="Select sensitivities">{{$item.name}}</ui-select-match>
+          <ui-select-choices repeat="sensitivity in vm.sensitivities | filter: {name:$select.search}">
+            {{sensitivity.name}}
+          </ui-select-choices>
+        </ui-select>
+      </div>
+    </div>
+  </div>
+  <div class="input">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+        <div class="input-label">{{'profile.outdoor_activities' | translate}}</div>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+        <ui-select multiple ng-model="vm.profile.secondary_profile.details.selectedActivities" theme="bootstrap" close-on-select="false"
+          tagging name="outdoor-activities">
+          <ui-select-match placeholder="Select an activity">{{$item.name}}</ui-select-match>
+          <ui-select-choices repeat="activity in vm.outdoor_activities | filter: {name:$select.search}">
+            {{activity.name}}
+          </ui-select-choices>
+        </ui-select>
+      </div>
+    </div>
+  </div>
+</div>

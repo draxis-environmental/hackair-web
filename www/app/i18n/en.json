@@ -1,0 +1,606 @@
+{
+  "landing": {
+    "about": {
+      "menu_heading": "About",
+      "headline": "Collective awareness for air quality",
+      "aim": "The hackAIR project aims at building an open technology platform that you can use to access, collect and improve air quality information in Europe.",
+      "learn_more": "Learn more",
+      "why_aq_matters": "Why air quality matters",
+      "did_you_know": "Did you know that 90% of Europeans living in cities are exposed to levels of air pollution deemed damaging to human health?",
+      "knowing_about_aq": "Knowing more about air quality is the first step to improving it.",
+      "why_should_i_get_involved": "Why should I get involved?",
+      "protect": "Protect",
+      "reduce_your_exposure": "Reduce your exposure to air pollution: choose to go outside when and where the air is fresh",
+      "preserve": "Reduce",
+      "avoid_polluting": "Avoid polluting behaviours: travel smart and breathe more easily",
+      "participate": "Participate",
+      "take_part": "Connect with others and ask policy makers to take steps for better air quality",
+      "take_part_now": "Take part now!",
+      "join_the_movement": "Join the movement to improve air quality in Europe"
+    },
+    "how_it_works": {
+      "menu_heading": "Explore",
+      "open_technology_platform": "Open technology platform to access, collect and improve information on air quality",
+      "web_app": "Web app",
+      "web_app_desc": "A customisable web application for local air quality information",
+      "mobile_app": "Smartphone app",
+      "mobile_app_desc": "Access personalised air quality information and contribute measurements from mobile images",
+      "our_data_sources": "Contribute air quality measurements",
+      "mobile_photos": "Mobile phone pictures",
+      "mobile_photos_desc": "Use hackAIR's app to access air quality information and to contribute measurements from mobile images.",
+      "open_sensors": "Open hardware sensors",
+      "open_sensors_desc": "Measuring air quality is not just for professionals. With a few electronics components, you can build your own air quality sensor in an afternoon.",
+      "low_tech": "Low tech measurements",
+      "low_tech_desc": "An easy way to provide measurements of air pollution using cardboard, grease and a bit of time.",
+      "open_datasets": "Open air quality datasets",
+      "open_datasets_desc": "hackAIR displays air quality data from a variety of sources. Learn how to use the hackAIR API to contribute your own air quality data - or to access hackAIR's data automatically.",
+      "register_now": "Register now!",
+      "access_recommendations": "Access personalised recommendations and contribute to the platform"
+    },
+    "register": {
+      "menu_heading": "Login",
+      "heading": "Register using your email",
+      "errors": {
+        "username": {
+          "required": "You did not enter a username",
+          "minlength": "Your username is too short",
+          "maxlength": "Your username is too long"
+        },
+        "email": {
+          "required": "You did not enter a valid email address",
+          "invalid": "You did not enter a valid email address",
+          "minlength": "Your email is too short",
+          "maxlength": "Your email is too long"
+        },
+        "password": {
+          "required": "You did not enter a password",
+          "minlength": "Your password is too short",
+          "maxlength": "Your password is too long"
+        }
+      },
+      "or_social_network": "Or register via social network",
+      "terms": "By registering with hackAIR you accept our terms of service."
+    },
+    "download": {
+      "download_the_app": "Download the app",
+      "get_access": "Get access to the full hackAIR experience by downloading the complementary app available for iOS and Android."
+    }
+  },
+  "footer": {
+    "links": "Links",
+    "project_website": "Project website",
+    "privacy_policy": "Privacy policy",
+    "our_news": "Our news",
+    "help": "Support",
+    "legal": "Legal",
+    "social_networks": "Social networks",
+    "eu_funded": "This project has received funding from the European Union Horizon 2020 research and innovation programme under grant agreement No 688363.",
+    "project_partners": "Project partners",
+    "copyright": "Copyright",
+    "copyright_title": "Content licensed under the Creative Commons Attribution License",
+    "rights_reserved": "All rights reserved.",
+    "download_the_app": "Download the app",
+    "terms_and_conditions": "Terms and conditions",
+    "support": "Support",
+    "tutorials": "Tutorials"
+  },
+
+  "general": {
+    "settings": "Settings",
+    "install_hackair_cardboard_sensors": "Install hackAIR cardboard sensors",
+    "add_sensor_measurement": "Add a sensor measurement",
+    "invite_friends": "Invite friends",
+    "about": "About",
+    "logout": "Logout",
+    "edit": "Edit",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No",
+    "follow": "Follow",
+    "unfollow": "Unfollow"
+  },
+  "sections": {
+    "profile": "My profile",
+    "edit_my_profile": "Edit my profile",
+    "my_sensors": "My sensors"
+  },
+  "intro": {
+    "skip": "Skip"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "reset_password_heading": "Reset your password",
+    "email": "Email",
+    "email_required": "You did not enter an email address",
+    "email_min_length": "Your email is too short",
+    "email_max_length": "Your email is too long",
+    "email_invalid": "Your email is not valid",
+    "password": "Password",
+    "password_required": "You did not enter a password",
+    "password_min_length": "Your password is too short",
+    "password_max_length": "Your password is too long",
+    "forgot_password": "Forgot your password?",
+    "repeat_password": "Repeat your password",
+    "repeat_password_required": "You did not repeat your password",
+    "repeat_password_min_length": "Your repeat password is too short",
+    "repeat_password_no_match": "Passwords don't match!",
+    "username": "Caution: Your username will be public. Consider not including personal information",
+    "username_required": "You did not enter a username",
+    "username_min_length": "Your username is too short",
+    "username_max_length": "Your username is too long",
+    "reset": "Reset",
+    "register_social_network": "or register via social network",
+    "terms_of_service_1": "By registering to hackAIR you accept our",
+    "terms_of_service_2": "terms of service.",
+    "i_want_to_receive_newsletters": "I want to receive newsletters",
+
+    "activate": {
+      "heading": "Activate your account!",
+      "click_to_activate": "Click to activate your account and complete your registration.",
+      "activate": "Activate"
+    },
+
+    "confirm-email": {
+      "heading": "Confirm email address",
+      "confirm_email_to_register": "Click to confirm your email address and complete your registration.",
+      "confirm": "Confirm",
+      "confirmed": "Confirmed!",
+      "successful_registration": "You have been registered to the hackAIR platform successfully!",
+      "you_can_now_login": "You can now login to your account.",
+      "email_not_confirmed": "Your email was not confirmed.",
+      "click_activation_link_again": "Please, click the activation link you've received on your email address after registering to the hackAIR platform."
+    },
+
+    "unsubscribe": {
+      "heading": "Unsubscribe",
+      "enter_email_to_unsubscribe": "Enter your email address to unsubscribe from our mailing list.",
+      "unsubscribe": "Unsubscribe",
+      "unsubscribed": "Unsubscribed!",
+      "ubsubscribed_successfully": "You have unsubscribed successfully!",
+      "something_went_wrong": "Something went wrong",
+      "try_again": "Please try again"
+    },
+
+    "login_view": {
+      "heading": "Login to your account",
+      "via_social_network": "or login via social network",
+      "new_to_hackair": "New to hackAIR?",
+      "register_here": "Register here",
+      "forgot_password": "Forgot your password?",
+      "forgot_password_text": "Did you forget your password? Enter your email and we will send you instructions on how to reset it."
+    }
+  },
+  "home": {
+    "navigation": {
+      "contribute": "Contribute",
+      "dashboard": "Dashboard",
+      "social": "Social",
+      "forum": "Forum",
+      "profile": "Profile",
+      "logout": "Logout"
+    },
+
+    "share_aq_heading": "Share air quality information",
+    "aq_history": "Air quality history in ",
+    "data_sources": "Data sources",
+
+    "prepared_missions": "We have prepared a new mission for you. Check it out!",
+    "new_badge_notification": "Congrats! You just got a",
+    "new_badge_notification_continue": "badge!"
+  },
+  "photo": {},
+  "profile": {
+    "navigation": {
+      "overview": "Overview",
+      "achievements": "Achievements",
+      "photos": "Photos",
+      "perceptions": "Perceptions",
+      "sensors": "Sensors",
+      "followers": "Followers"
+    },
+
+    "edit": {
+      "navigation": {
+        "details": "Details",
+        "password": "Password",
+        "settings": "Settings",
+        "delete": "Delete"
+      },
+      "password": {
+        "change_your_password_heading": "Change your password",
+        "current_password": "Current password",
+        "new_password": "New password",
+        "repeat_new_password": "Repeat your new password",
+        "change_button": "Change"
+      },
+      "settings": {
+        "notification_settings_heading": "Notification Settings",
+        "privacy_settings_heading": "Privacy Settings",
+        "newsletter_settings_heading": "Newsletter Settings"
+      },
+      "delete": {
+        "delete_your_account_heading": "Please write the word 'hackAIR' to delete your account",
+        "delete_button": "Delete",
+        "write_hackair": "Please type 'hackAIR'",
+        "word_required": "You did not enter the word 'hackAIR'",
+        "word_no_match": "You didn't type 'hackAIR'",
+        "disclaimer": "Your account will be deactivated. All your data will be automatically deleted. In case you want to use again hackAIR, please create a new account."
+      }
+    },
+    "points": "points",
+    "level": "Level",
+    "my_profile": "My profile",
+    "location_placeholder": "Town/City",
+    "secondary_profile": "Secondary Profile",
+    "want_secondary_profile": "I want a secondary profile",
+    "achievements": "Achievements",
+    "sensors": "Sensors",
+    "following": "Following",
+    "followers": "Followers",
+    "my_communities": "My communities",
+    "make_my_profile_public": "Make my profile public",
+    "accept_newsletters": "I want to receive newsletters",
+    "i_want_to_receive_notification_emails": "I want to receive notification emails",
+    "what_does_this_mean": "What does this mean?",
+    "what_does_this_mean_text": "Having a public profile means that other users are able to follow you and access your profile from search.",
+
+    "private_info_heading": "Private info",
+    "contributions_heading": "Latest contributions",
+    "photos_per_day": "Photos per day",
+
+    "heading": "Edit profile",
+    "personal_info": "Personal information",
+    "secondary_profile_info": "Secondary profile information",
+    "name": "First name",
+    "surname": "Last name",
+    "location": "Location",
+    "year_of_birth": "Year of birth",
+    "gender": "Gender",
+    "genders": {
+      "female": "Female",
+      "male": "Male",
+      "other": "Other"
+    },
+    "language": "Language",
+    "languages": {
+      "english": "English",
+      "german": "German",
+      "norwegian": "Norwegian"
+    },
+    "sensitivities": "I would like to receive information about the following sensitivities",
+    "outdoor_activities": "I would like to receive information about the following outdoor activities",
+    "outdoor_job": "Outdoor job",
+
+    "age": "Age",
+    "groups": "Groups",
+    "communities": "Communities",
+
+    "achievements": {
+      "acquired_badges_heading": "Acquired badges",
+      "available_badges_heading": "Available badges"
+    },
+
+    "photos": {
+      "my_photos_heading": "My photos",
+      "public_photos_heading": "photos",
+      "public_photos_click": "You can click on a photo to see how air quality was or why the photo was not used.",
+      "photos_marked_with_a": "Photos marked with a",
+      "were_used_by_hackAIR": "were used by hackAIR.",
+      "come_from_cardboard_sensors": "come from Cardboard Sensors.",
+      "loading_please_wait": "loading...please wait",
+      "Air_quality_is": "Air quality is",
+      "very_good": "very good",
+      "good": "good",
+      "medium": "medium",
+      "bad": "bad",
+      "perfect": "perfect",
+      "the_photo_does_not_contain_usable_sky": "The photo does not contain usable sky.",
+      "NOT_AVAILABLE": "not available for photos with non-usable sky"
+    },
+
+    "perceptions": {
+      "my_perceptions_heading": "My perceptions",
+      "public_perceptions_heading": "perceptions"
+    },
+
+    "sensors": {
+      "my_sensors_heading": "My sensors",
+      "public_sensors_heading": "sensors",
+      "add_a_new_sensor": "ADD A NEW SENSOR",
+      "delete_sensor_title": "DELETE SENSOR",
+      "confirm_delete": "Are you sure you want to DELETE this sensor"
+    },
+
+    "followers": {
+      "my_followers_heading": "My followers",
+      "public_followers_heading": "followers",
+      "invite_people": "Invite people",
+      "follow": "Follow",
+      "unfollow": "Unfollow"
+    }
+  },
+  "map": {
+    "no_city_data_message": "Currently we support only Berlin and Oslo",
+    "select_location": "Select a location from the map",
+    "save_location": "Save location",
+    "select_city": "Select city",
+    "compare": "Compare",
+    "cancel": "Cancel",
+    "choose_to_compare": "Choose 2 cities to compare them!",
+    "warning": "Please select 2 cities.",
+    "compare_cities": "Compare Cities"
+  },
+  "chart": {
+    "last_week": "Last Week",
+    "last_month": "Last Month",
+    "last_year": "Last Year"
+  },
+  "sensor": {
+    "view": "View sensor",
+    "new": "New sensor",
+    "edit": "Edit",
+    "name": "Sensor name",
+    "lcoation": "Sensor location",
+    "type": "Sensor type",
+    "access_key": "Access key",
+    "export_data": "Export sensor data",
+    "arduino": "Arduino sensor",
+    "mac_address": "MAC address",
+    "floor": "Floor",
+    "sensor_measurements_heading": "Sensor Measurements",
+    "sensor_id": "Sensor ID:",
+    "warning": "Please select a positive floor",
+    "FROM": "FROM",
+    "TO": "TO",
+    "GET_MEASUREMENTS": "GET MEASUREMENTS"
+  },
+  "map_pop_ups": {
+    "Source": "Source",
+    "days_ago": "days ago",
+    "Pollutant_value": "Pollutant value"
+  },
+  "air_quality": {
+    "air_quality_is": "Air quality is ",
+    "bad": "bad",
+    "medium": "medium",
+    "good": "good",
+    "very_good": "very good",
+    "excellent": "very good",
+    "history": "History",
+    "share": "Share",
+    "disclaimers": {
+      "disclaimer_measurements": "This index is only a qualitative representation of the ambient air quality, and is still in experimental stage. Reports, studies and other scientific interpretations should only be performed by using established measurement methodologies.",
+      "disclaimer_recommendations": "These recommendations do not constitute a medical or emergency advice. Please only use them for informational purposes.",
+      "disclaimer_quality_history": "The current index was calculated from all the available data sources for the city centre.",
+      "disclaimer_unsupportedcity": "Currently we do not estimate the air quality index for this city. You can though check the map for other users' contributions and upload your own measurements!"
+    },
+    "from": "from",
+    "to": "to"
+  },
+  "sensors": {
+    "add_new": "Add a new sensor"
+  },
+  "communities": {
+    "navigation": {
+      "map": "Map",
+      "contributions": "Contributions",
+      "members": "Members"
+    },
+    "edit": {
+      "navigation": {
+        "edit": "Edit",
+        "update": "Update",
+        "delete": "Delete"
+      },
+      "delete": {
+        "delete_your_community_heading": "Please write the word 'hackAIR' to delete your community",
+        "delete_button": "Delete",
+        "write_hackair": "Please write the word 'hackAIR'",
+        "word_required": "You did not enter the word 'hackAIR'",
+        "word_no_match": "You didn't type 'hackAIR'"
+      }
+    },
+    "search_heading": "Search",
+    "my_news_feed_heading": "My news feed",
+    "my_communities_heading": "My communities",
+    "create_new": "Create a community",
+    "name": "Name",
+    "description": "Description",
+    "members": "members",
+    "you_can_join_this_community": "You can join this community",
+    "you_can_leave_this_community": "You can leave this community",
+    "join": "Join",
+    "leave": "Leave",
+    "export_community_data": "Export community data",
+    "community_social_feed": "Community social feed",
+    "new": "New community",
+    "update": "Update your community",
+    "have_to_join_community": "You have to join this community to see its social feed."
+  },
+
+  "social": {
+    "search_heading": "Search",
+    "search_placeholder": "Search for people, communities",
+    "my_news_feed_heading": "My news feed",
+    "my_communities_heading": "My communities",
+    "create_new_community": "Create a new community",
+    "notifications": "Notifications"
+  },
+
+  "city_search": {
+    "chooseLocation": "Please choose a valid location from the list"
+  },
+
+  "cancel": "Cancel",
+  "save": "Save",
+  "create": "Create",
+  "update": "Update",
+  "BUTTON_LANG_DE": "German",
+  "BUTTON_LANG_EN": "English",
+  "BUTTON_LANG_NO": "Norwegian",
+
+  "footerfeed": {
+    "feedback_share": "Share your feedback"
+  },
+  "landingnavigation": {
+    "toggle_navigation": "Toggle navigation"
+  },
+  "mapby": {
+    "map_tile": "Map tiles by",
+    "under": "under",
+    "data_by": "Data by"
+  },
+  "error": {
+    "page_not_found": "Page Not Found",
+    "this_page_not_found": "This page could not be found."
+  },
+  "submitperceptions": {
+    "user_not_submit_perceptions": "This user has not submitted any perceptions."
+  },
+  "submitphotos": {
+    "user_not_submit_photos": "This user has not submitted any photos."
+  },
+  "submitsensors": {
+    "user_not_submit_sensors": "This user has not submitted any sensors."
+  },
+  "locationsensor": {
+    "location_detail": "Location details"
+  },
+  "viewsensor": {
+    "export_measurements": "EXPORT MEASUREMENTS"
+  },
+  "hackair": {
+    "hackair_home": "hackAIR home",
+    "hackair_mobile": "hackAIR mobile"
+  },
+  "dtlprofile": {
+    "username": "Username",
+    "receive_daily_info_aq": "I want to receive daily emails with information about the current air quality conditions."
+  },
+  "setprofile": {
+    "receive_personal_recommendation": "In case you want to receive personalized recommendations please fill in all the following fields. Recommendations will be displayed on the home screen."
+  },
+  "uploadphoto": {
+    "image": "Image",
+    "browse": "Browse",
+    "upload": "Upload",
+    "cancel": "Cancel"
+  },
+  "community": {
+    "no_results": "No Results Found"
+  },
+  "testmission_0": {
+    "complete_profile": "Complete your profile",
+    "increase_strength_profile": "Increase the strength of your profile.",
+    "msg_set_account": "Let’s set up your account, shall we? As a hacker, you need a home base from which you can operate. This should be your profile where you can see all the important data. Let's set it up!"
+  },
+  "testmission_1": {
+    "public_trans": "Public Transport Awareness",
+    "prove_envi_sensi": "Prove your environmental sensitivities.",
+    "public_trans_m": "Public Transport Awareness Mission",
+    "msg_prove_envi_sensi": "Prove your environmental sensitivities by using three different means of public transport in a week."
+  },
+  "testmission_2": {
+    "cycling_city": "Cycling in the City",
+    "msg_cycling_city": "Prove your environmental sensitivities by cycling in the city."
+  },
+  "testmission_3": {
+    "walk_mile": "Walk a Mile",
+    "improve_health": "Improve your health by walking.",
+    "msg_walking": "Prove your environmental sensitivities by walking."
+  },
+  "testmission_4": {
+    "run_lola": "Run Lola Run",
+    "some_exercise": "Do some exercise!",
+    "msg_running": "Prove your environmental sensitivities by using running."
+  },
+  "filters": {
+    "filter_map": "Continuous map",
+    "filter_map_desc": "Calculated air quality estimates from official stations, hackAIR sensors and satellite data for Norway and Germany",
+    "filter_cardboard": "hackAIR cardboard",
+    "filter_cardboard_desc": "Air quality estimates from hackAIR cardboard sensors",
+    "filter_sensors_luftdaten": "DIY sensors - Luftdaten",
+    "filter_sensors_luftdaten_desc": "Measurements from the Luftdaten sensing community",
+    "filter_sensors_hackair": "DIY sensors - hackAIR",
+    "filter_sensors_hackair_desc": "Measurements from hackAIR home & mobile sensors",
+    "filter_sky_photos": "Sky photos",
+    "filter_sky_photos_desc": "Air quality estimates from sky photos",
+    "filter_stations": "Official stations",
+    "filter_stations_desc": "Measurements from official monitoring stations",
+    "filter_perceptions": "Perceptions",
+    "filter_perceptions_desc": "Subjective air quality perceptions submitted through the hackAIR app",
+    "filter_my_sensors": "My sensors",
+    "filter_my_sensors_desc": "Measurements from your own hackAIR sensors",
+    "filter_my_photos": "My photos",
+    "filter_my_photos_desc": "Air quality estimates from your own sky photos",
+    "fusion": "Fusion",
+    "luftdaten": "luftdaten",
+    "cots": "Cots",
+    "sensors": "Sensors",
+    "photos": "Photos",
+    "open_data": "Open Data",
+    "perceptions": "Perceptions",
+    "my_sensors": "My sensors",
+    "my_photos": "My photos"
+  },
+  "msg_notification_c": "Tip! You can always improve the air by using public transport.",
+  "authcontrol": {
+    "welcome": "Welcome",
+    "welcome_back": "Welcome back,",
+    "success_logout": "Successfully logged out",
+    "reset_link": "Reset link was sent to ",
+    "pass_changed": "Password changed."
+  },
+  "profilecontrol": {
+    "profile_saved": "Your profile has been saved",
+    "notification_saved": "Your notification settings have been saved",
+    "newsletter_saved": "Your newsletter settings have been saved",
+    "privacy_saved": "Your privacy settings have been saved",
+    "pass_updated": "Your password has been updated",
+    "some_wrong": "Oops, something went wrong",
+    "success_deleted": "Your account has been successfully deleted"
+  },
+
+  "hom": {
+    "search_place_address": "Search for a place or address..."
+  },
+
+  "search_place": "Search for a place...",
+  "type_city_address": "Type a city or address...",
+
+  "cities": {
+    "athens": "Athens",
+    "berlin": "Berlin",
+    "brussels": "Brussels",
+    "london": "London",
+    "oslo": "Oslo",
+    "thessaloniki": "Thessaloniki"
+  },
+
+  "primary_profile": "Primary Profile",
+
+  "select_city": "Select city",
+
+  "time": "Time",
+  "pollutant": "Pollutant",
+  "value": "Value",
+  "meter": "Meter",
+
+  "indoor": "Indoor",
+  "building_entrance": "Building entrance",
+  "garden": "Garden",
+  "terrace": "Terrace",
+  "balcony": "Balcony",
+  "street": "Street",
+  "other_outdoor": "Other outdoor",
+  "none": "None",
+  "arduino": "arduino",
+  "bleair": "bleair",
+
+  "only_measurement": "*Only 5000 measurement (about one week data) can be exported.",
+  
+  "no_location": "No Location",
+  "map_filter":"Map filter"
+  
+}

@@ -1,0 +1,118 @@
+  <container-fluid>
+
+    <!-- map section -->
+    <section class="map">
+        <map intro="true"></map>
+    </section>
+
+    <!-- web app and smartphone showcase section -->
+    <section id="showcase">
+        <header>
+
+                <div class="row" style="font-size:11px; text-align: center; color: white!important; background-color: #2aced8; padding-top: 10px;">
+                    <p>{{ 'mapby.map_tile' | translate }} <a href="http://stamen.com">Stamen Design</a>, {{ 'mapby.under' | translate }} <a style="text-decoration: underline;" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. {{ 'mapby.data_by' | translate }} <a style="text-decoration: underline;" href="http://openstreetmap.org">OpenStreetMap</a>, {{ 'mapby.under' | translate }} <a  href="http://www.openstreetmap.org/copyright">ODbL</a>.</p>
+                </div>
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-lg-4 col-lg-offset-4">
+                    <h3>{{::'landing.how_it_works.open_technology_platform' | translate }}</h3>
+                </div>
+            </div>
+        </header>
+        <section id="content">
+            <div class="row ">
+                <div class="col-xs-6 col-sm-3 col-lg-3 col-lg-offset-1 text-right">
+                    <h5>{{::'landing.how_it_works.web_app' | translate }}</h5>
+                    <p>{{::'landing.how_it_works.web_app_desc' | translate }}</p>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-lg-1">
+                    <img src="/img/Browser.svg">
+                </div>
+                <div class="col-xs-12 col-sm-2 ">
+                    <h1>&</h1>
+                </div>
+                <div class="col-xs-7 col-sm-3 col-sm-push-1 col-lg-3 text-left">
+                    <h5>{{::'landing.how_it_works.mobile_app' | translate }}</h5>
+                    <p>{{::'landing.how_it_works.mobile_app_desc' | translate }}</p>
+                </div>
+                <div class="col-xs-5 col-sm-1 col-sm-pull-3">
+                    <img src="/img/Smartphone.svg">
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- data sources section -->
+    <section id="data-sources">
+        <header>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2 class="uppercase">{{::'landing.how_it_works.our_data_sources' | translate }}</h2>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 text-center">
+                <img src="/img/Bubble_Red_Photos.svg">
+                <h4 class="capitalize">{{::'landing.how_it_works.mobile_photos' | translate }}</h4>
+                <p class="">{{::'landing.how_it_works.mobile_photos_desc' | translate}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-3 text-center">
+                <img src="/img/Bubble_Red_Beaker.svg">
+                <h4 class="capitalize">{{::'landing.how_it_works.low_tech' | translate }}</h4>
+                <p class="">{{::'landing.how_it_works.low_tech_desc' | translate}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-3 text-center">
+                <img src="/img/Bubble_Red_Sensors.svg">
+                <h4 class="capitalize">{{::'landing.how_it_works.open_sensors' | translate }}</h4>
+                <p class="">{{::'landing.how_it_works.open_sensors_desc' | translate}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-3 text-center">
+                <img src="/img/Bubble_Red_Data.svg">
+                <h4 class="capitalize">{{::'landing.how_it_works.open_datasets' | translate }}</h4>
+                <p class="">{{::'landing.how_it_works.open_datasets_desc' | translate}}</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="call-to-action">
+        <header>
+            <div class="row ">
+                <div class="col-sm-8 col-sm-offset-2">
+                 <h1 class="uppercase">{{::'landing.how_it_works.register_now' | translate }}</h1>
+            </div>
+        </header>
+        <div class="row ">
+            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4">
+                <h5>{{::'landing.how_it_works.access_recommendations' | translate }}</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- download section -->
+    <div class="row download-section">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1 col-sm-push-3 col-md-6 col-lg-4 col-lg-offset-2">
+            <div class="row">
+                <div class="col-sm-12 col-xs-10 col-xs-offset-1">
+                    <h5>{{::'landing.download.download_the_app' | translate }}</h5>
+                    <p>{{::'landing.download.get_access' | translate }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-md-5 col-lg-5">
+                    <a href="https://www.apple.com/itunes/charts/free-apps/"><img class="store-icon img-responsive" src="/img/Button_Appstore.svg"></a>
+                </div>
+                <div class="col-xs-5 col-sm-5 col-md-6 col-lg-5">
+                    <a href="https://play.google.com"><img class="store-icon img-responsive" src="/img/Button_Playstore.svg"></a>
+                </div>
+            </div>
+        </div>
+         <div class="col-xs-12 col-sm-3 col-sm-pull-6 col-lg-3 col-lg-offset-3 text-center">
+            <img id="phone-mockup"   src="/img/iPhone.png" >
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer-section></footer-section>
+</container-fluid>

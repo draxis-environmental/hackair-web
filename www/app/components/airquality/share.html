@@ -1,0 +1,49 @@
+<div class="popup">
+  <div class="popup-dialog">
+    <!-- popup content-->
+    <div class="popup-content">
+      <div class="popup-header">
+        <button type="button" ng-click="ok()" class="close">&times;</button>
+        <h4 class="popup-title">{{'home.share_aq_heading' | translate}}</h4>
+      </div>
+      <div class="popup-body">
+        <p>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="{{quote}}" data-url="{{href}}"
+            data-show-count="false">Tweet</a>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+        <p>
+          <button class="btn btn-primary btn-xs" ng-click="shareFb()">
+            <img src="img/social/u_i_facebook.svg" height="14px" style="vertical-align:sub;" />&nbsp;&nbsp;{{ 'air_quality.share' | translate }}</button>
+        </p>
+        <!--<p>
+          <button class="btn btn-primary btn-sm share-twitter">via email</button>
+        </p>-->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '423026398078639',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v2.9'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script>
+</div>

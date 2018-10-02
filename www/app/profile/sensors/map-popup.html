@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <h6>{{'map.select_location' | translate}} <button class="btn btn-xs btn-primary pull-right" ng-click="vm.save()">{{'map.save_location' | translate}}</button></h6>
+      <div>
+        <city-search placeholder="{{'type_city_address'| translate}}" searchmap="true" sensoraddress="true" ng-model="vm.sensorAddress" location-changed="vm.locationChanged" required name="address" radius="1500000" class=""/>
+      </div>
+      <div class="map" style="margin:20px 0;" id="map">
+      </div>
+    </div>
+  </div>
+</div>

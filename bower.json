@@ -1,0 +1,38 @@
+{
+  "name": "HackAIR",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "leaflet": "^1.0.3",
+    "angular": "1.5",
+    "ngstorage": "^0.3.11",
+    "angular-translate": "^2.15.1",
+    "angular-dynamic-locale": "^0.1.32",
+    "angular-translate-loader-static-files": "^2.15.1",
+    "angular-animate": "1.5.11",
+    "angular-messages": "1.5.11",
+    "angular-ui-router": "^0.4.2",
+    "angular-sanitize": "1.5.11",
+    "restangular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "ngToast": "ngtoast#^2.0.0",
+    "angular-ui-select": "^0.19.8",
+    "d3": "^4.9.1",
+    "angular-touch": "1.5",
+    "angular-bootstrap": "^2.5.0",
+    "moment": "^2.18.1",
+    "chart.js": "^2.6.0",
+    "angular-loading-bar": "^0.9.0",
+    "ng-file-upload": "^12.2.13",
+    "angular-language-picker": "azachar/angular-language-picker#^0.4.3",
+    "leaflet.markercluster": "^1.2.0",
+    "angular-bootstrap-confirm": "^2.5.1",
+    "angular-ui-bootstrap-datetimepicker": "^2.5.1",
+    "angular-bootstrap-datetimepicker": "^1.1.4",
+    "angularjs-geolocation": "^0.1.1",
+    "moment-timezone": "^0.5.16"
+  },
+  "resolutions": {
+    "angular-bootstrap": "^2.5.0"
+  }
+}

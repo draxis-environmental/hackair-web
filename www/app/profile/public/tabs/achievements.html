@@ -1,0 +1,42 @@
+<!-- Nav tabs -->
+
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation">
+    <a ui-sref="public.overview" aria-controls="overview" role="tab">{{'profile.navigation.overview' | translate}}</a>
+  </li>
+  <li role="presentation" class="active">
+    <a ui-sref="public.achievements" aria-controls="achievements" role="tab">{{'profile.navigation.achievements' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.photos" aria-controls="photos" role="tab">{{'profile.navigation.photos' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.perceptions" aria-controls="perceptions" role="tab">{{'profile.navigation.perceptions' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.sensors" aria-controls="sensors" role="tab">{{'profile.navigation.sensors' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.followers" aria-controls="followers" role="tab">{{'profile.navigation.followers' | translate}}</a>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <!-- Achievements Tab -->
+  <div role="tabpanel" class="tab-pane active" id="achievements">
+    <div class="content">
+      <h3>{{'profile.achievements.acquired_badges_heading' | translate}}</h3>
+      <!-- acquired badges row -->
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 text-center item-badge" ng-repeat="achievement in vm.acquired">
+          <a href="#" ng-click="vm.BadgePopup(achievement, 'acquired')">
+            <img ng-src="/img/badges/Badges_with_bg/{{achievement.display_picture}}" ng-click="" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- / content div -->
+  </div>
+  <!-- / tabpanel div -->
+  <!-- / Achievements Tab -->
+</div>

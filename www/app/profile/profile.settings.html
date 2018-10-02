@@ -1,0 +1,62 @@
+<container-fluid>
+    <form class="reset-form form" name="deleteForm" style="padding-bottom: 20px;">
+
+        <div class="reset card list" style="padding-top:1px!important;">
+            <h3>{{'profile.edit.settings.notification_settings_heading' | translate}}</h3>
+            <div class="row">
+                <div class="col-xs-12">
+
+                  <div class="public">
+                      <h6 class="option">{{ 'dtlprofile.receive_daily_info_aq' | translate }}</h6>
+                      <label class="toggle">
+                          <input type="checkbox" ng-checked="vm.profile.notify_email" ng-click="vm.toggleNotificationEmails()">
+                          <div class="track">
+                              <div class="handle"></div>
+                          </div>
+                      </label>
+                  </div>                  
+
+                </div>
+            </div>
+        </div>
+
+        <div class="reset card list" style="padding-top:1px!important;">
+            <h3>{{'profile.edit.settings.privacy_settings_heading' | translate}}</h3>
+            <div class="row">
+                <div class="col-xs-12">
+
+                  <div class="public">
+                      <h6 class="option">{{ 'profile.make_my_profile_public' | translate }}</h6>
+                      <label class="toggle">
+                          <input type="checkbox" ng-checked="!vm.profile.private" ng-click="vm.togglePrivacy()">
+                          <div class="track">
+                              <div class="handle"></div>
+                          </div>
+                      </label>
+                  </div>                  
+
+                </div>
+            </div>
+        </div>  
+
+        <div class="reset card list" style="padding-top:1px!important;">
+            <h3>{{'profile.edit.settings.newsletter_settings_heading' | translate}}</h3>
+            <div class="row">
+                <div class="col-xs-12">
+
+                  <div class="public">
+                      <h6 class="option">{{ 'profile.accept_newsletters' | translate }}</h6>
+                      <label class="toggle">
+                          <input type="checkbox" ng-checked="vm.profile.accept_newsletters" ng-click="vm.toggleNewsletter()">
+                          <div class="track">
+                              <div class="handle"></div>
+                          </div>
+                      </label>
+                  </div>                  
+
+                </div>
+            </div>
+        </div>       
+
+    </form>
+</container-fluid>

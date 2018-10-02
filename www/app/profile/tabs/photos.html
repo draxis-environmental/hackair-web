@@ -1,0 +1,48 @@
+<profile-navigation></profile-navigation>
+<style>
+  .cancel-button {
+    display: none;
+  }
+
+  .confirm-button {
+    display: none;
+  }
+
+</style>
+<div class="tab-content">
+  <!-- Photos Tab -->
+  <div role="tabpanel" class="tab-pane active" id="photos">
+    <div class="content">
+      <h3>{{'profile.photos.my_photos_heading' | translate}}</h3>
+      <h5>{{'profile.photos.public_photos_click' | translate}}
+        <br/>{{'profile.photos.photos_marked_with_a' | translate}}
+        <img src="/img/icons/icon_small_check_circled.svg" alt="checkmark"> {{'profile.photos.were_used_by_hackAIR' | translate}}
+        <br> {{'profile.photos.photos_marked_with_a' | translate}}
+        <img ng-if="!photo.image_info.id" src="/img/icons/cardboard-icon4.png" height="25" style="opacity:0.9;" class="used" alt="used by hackAIR"> {{'profile.photos.come_from_cardboard_sensors' | translate}}</h5>
+      <div class="row" style="height:15px;">
+        <div class="col-xs-12">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-2 text-center photo" ng-repeat="photo in vm.photos">
+          <!-- <img ng-src="{{photo.source_info.thumb_image_url}}" class="img img-responsive" alt="Photo taken on {{photo.created_at}}"> -->
+
+          <!-- Sky Images -->
+          <!-- Confirm popup fetched AirQuality -->
+          <img ng-if="photo.image_info.id" mwl-confirm title="{{vm.airQualityTitle}}" confirm-text="OKAY" cancel-text="CANCEL" message="{{'profile.photos.Air_quality_is' | translate}} {{vm.airQualityIndex}}"
+            ng-src="{{photo.source_info.thumb_image_url}}" ng-click="vm.getPhotoAQI(photo.image_info.id)" class="img img-responsive clicked"
+            alt="Photo taken on {{photo.created_at}}">
+
+          <!-- Cots Images -->
+          <!-- Non Clickable -->
+          <img ng-if="!photo.image_info.id" ng-src="{{photo.source_info.thumb_image_url}}" class="img img-responsive" alt="Photo taken on {{photo.created_at}}">
+          <img ng-if="!photo.image_info.id" src="/img/icons/cardboard-icon4.png" height="30" style="opacity:0.9;" class="used">
+
+          <img ng-if="photo.used" src="/img/icons/icon_small_check_circled.svg" class="used" alt="used by hackAIR">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Photos Tab -->
+</div>

@@ -1,0 +1,95 @@
+<profile-navigation></profile-navigation>
+<div class="tab-content">
+  <!-- Sensors -->
+  <div role="tabpanel" class="tab-pane active" id="sensors">
+    <div class="content">
+      <h3>{{'sensor.edit' | translate}}</h3>
+      <form class="form">
+        <div class="row">
+          <!-- <div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-1 text-center">
+          <div class="avatar">
+            <img class="avatar-icon" ng-src="{{ 'img/ui/u_i_avatar_empty.svg' }}" />
+            <img class="icon-square-edit" src="../../../img/icons/icon_square_edit.svg">
+          </div>
+        </div> -->
+          <div class="col-xs-12 col-sm-12 input-fields">
+            <div class="input">
+              <div class="row">
+                <div class="col-xs-4">
+                  <span class="input-label" aria-label="Sensor">{{'profile.name' | translate}}</span>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" ng-model="vm.sensor.name">
+                </div>
+              </div>
+            </div>
+            <div class="input">
+              <div class="row">
+                <div class="col-xs-4">
+                  <span class="input-label" title="Type">{{'sensor.type' | translate}}</span>
+                </div>
+                <div class="col-xs-8">
+                  <select options="vm.types" ng-model="selectedSensor" name="sensor-type" ng-options="type.name for type in vm.types">
+
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="input" ng-hide="selectedSensor.name === 'hackAIR mobile'">
+              <div class="row">
+                <div class="col-xs-4">
+                  <span class="input-label" aria-label="Location">{{'profile.location' | translate}}</span>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" ng-model="vm.sensor.location.properties.label" disabled>&nbsp;
+                  <button class="btn btn-primary btn-xs" ng-click="vm.openMapPopup()">
+                    <i class="glyphicon glyphicon-screenshot"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="input" ng-hide="selectedSensor.name === 'hackAIR mobile'">
+              <div class="row">
+                <div class="col-xs-4">
+                  <span class="input-label" title="Type">{{ 'locationsensor.location_detail' | translate }}</span>
+                </div>
+                <div class="col-xs-8">
+                  <!-- <select options="vm.locations" ng-model="selectedLocationType" name="sensor-location-type" ng-options="location for location in vm.locations" > -->
+                  <select options="vm.locations" ng-model="vm.sensor.location_type" name="sensor-location-type" ng-options="location for location in vm.locations">
+
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="input" ng-hide="selectedSensor.name === 'hackAIR mobile'">
+              <div class="row">
+                <div class="col-xs-4">
+                  <span class="input-label" aria-label="Sensor">{{'sensor.floor' | translate}}</span>
+                </div>
+                <div class="col-xs-8">
+                  <input type="number" ng-model="vm.sensor.floor">
+                </div>
+              </div>
+            </div>
+            <div class="input" ng-if="selectedSensor.name == 'Ble AIR'">
+              <div class="row">
+                <div class="col-xs-4">
+                  <span class="input-label" aria-label="MAC">{{'sensor.mac_address' | translate}}</span>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" ng-model="vm.sensor.mac">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7 col-xs-offset-5 col-sm-5 col-sm-offset-7">
+            <button class="button button-cancel" ng-click="vm.returnToSensor()">{{'cancel' | translate}}</button>
+            <button class="button button-save" ng-click="vm.updateSensor()">{{'save' | translate}}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

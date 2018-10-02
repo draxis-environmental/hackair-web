@@ -1,0 +1,71 @@
+<!-- Nav tabs -->
+
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation">
+    <a ui-sref="public.overview" aria-controls="overview" role="tab">{{'profile.navigation.overview' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.achievements" aria-controls="achievements" role="tab">{{'profile.navigation.achievements' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.photos" aria-controls="photos" role="tab">{{'profile.navigation.photos' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.perceptions" aria-controls="perceptions" role="tab">{{'profile.navigation.perceptions' | translate}}</a>
+  </li>
+  <li role="presentation" class="active">
+    <a ui-sref="public.sensors" aria-controls="sensors" role="tab">{{'profile.navigation.sensors' | translate}}</a>
+  </li>
+  <li role="presentation">
+    <a ui-sref="public.followers" aria-controls="followers" role="tab">{{'profile.navigation.followers' | translate}}</a>
+  </li>
+</ul>
+<div class="tab-content">
+  <!-- Sensors -->
+  <div role="tabpanel" class="tab-pane active" id="sensors">
+    <div class="content">
+      <h3>{{ vm.profile.name || '@' + vm.profile.username }}'s {{'profile.sensors.public_sensors_heading' | translate}}</h3>
+      <!-- map view -->
+      <!--
+      <div class="row">
+        <div class="col-xs-12 sensor-map" id="map">
+        </div>
+      </div>
+      -->
+      <!-- / map view-->
+      <!-- for each sensor -->
+      <div ng-if="vm.sensors.length == 0">
+        <span>{{ 'submitsensors.user_not_submit_sensors' | translate }}</span>
+      </div>
+      <div class="row" ng-repeat="sensor in vm.sensors">
+        <div class="col-xs-3 col-sm-3 no-padding text-center">
+          <img src="/img/temp/sensor_0.png" class="sensor-photo" alt="sensor photo">
+        </div>
+        <div class="col-xs-8 col-sm-8 no-padding">
+          <h4>{{sensor.name}}</h4>
+          <div class="row">
+            <!--
+            <div class="col-xs-12 col-sm-4 no-padding">
+              <h6><img src="/img/icons/icon_small_pin_inactive.svg"> {{sensor.location.properties.label_short}}</h6>
+            </div>
+            -->
+            <div class="col-xs-12  col-sm-4 no-padding">
+              <h6>
+                <img src="/img/icons/icon_small_sensor_inactive.svg"> {{sensor.type}}</h6>
+            </div>
+            <div class="col-xs-12 col-sm-4 no-padding">
+              <h6>
+                <img src="/img/icons/icon_small_latest.svg"> {{sensor.fromNow }}</h6>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-xs-1 no-padding">
+          <a href="/user/{{ vm.profile.id }}/sensors/{{ sensor.id }}"><img class="chevron-right" src="../../img/icons/icon_small_chevron_dark_right.svg"></a>
+        </div> -->
+        <hr class="soft-separator">
+      </div>
+      <!-- / for each sensor -->
+    </div>
+  </div>
+  <!-- / Sensors -->
+</div>

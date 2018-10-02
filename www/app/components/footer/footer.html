@@ -1,0 +1,164 @@
+<section>
+  <div class="row cyan-background">
+
+    <div class="col-sm-3 col-md-3 col-md-offset-1 text-center">
+      <img src="/img/Logo_hackAIR_SmallRect_Monochromatic.png">
+    </div>
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-3">
+      <div class="row">
+        <div class="col-sm-12">
+          <h5>{{::'footer.links' | translate}}</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10">
+          <ul>
+            <li>
+              <a href="http://hackair.eu/downloads/" target="_blank">{{::'footer.download_the_app' | translate}}</a>
+            </li>
+            <li>
+              <a href="http://hackair.eu/terms-and-conditions/" target="_blank">{{::'footer.terms_and_conditions' | translate}}</a>
+            </li>
+            <li>
+              <a href="http://hackair.eu/support/" target="_blank">{{::'footer.support' | translate}}</a>
+            </li>
+            <li>
+              <a href="http://hackair.eu/tutorials/" target="_blank">{{::'footer.tutorials' | translate}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-lg-3 ">
+      <h5>{{::'footer.social_networks' | translate }}</h5>
+
+      <div class="row">
+        <a ng-href="https://bit.ly/2KI0Gt7">
+          <button style="padding: 0px 15px!important" class="btn btn-primary btn-md" type="button">{{ 'footerfeed.feedback_share' | translate }}
+            <img src="img/icons/share2.png" height="25">
+          </button>
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3 col-xs-3">
+          <a href="https://www.facebook.com/hackairproject/">
+            <img src="img/social/u_i_facebook.svg">
+          </a>
+        </div>
+        <div class="col-sm-3 col-xs-3">
+          <a href="https://twitter.com/hack_air">
+            <img src="img/social/u_i_twitter.svg">
+          </a>
+        </div>
+        <div class="col-sm-3 col-xs-3">
+          <a href="http://instagram.com/hackairproject">
+            <img height="25" src="img/social/instagram-icon.png">
+          </a>
+        </div>
+        <!-- <div class="col-sm-3 col-xs-3">
+                        <a href=""><img src="img/social/u_i_google_plus.svg"></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-3">
+                        <a href=""><img src="img/social/u_i_linked_in.svg"></a>
+                    </div> -->
+      </div>
+    </div>
+
+    <div ng-show="loggedIn" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-2">
+      <br>
+      <br>
+      <div class="row" style="font-size:11px;">
+        <p>{{ 'mapby.map_tile' | translate }}
+          <a href="http://stamen.com">Stamen Design</a>, {{ 'mapby.under' | translate }}
+          <a style="text-decoration: underline;" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. {{ 'mapby.data_by' | translate }}
+          <a style="text-decoration: underline;" href="http://openstreetmap.org">OpenStreetMap</a>, {{ 'mapby.under' | translate }}
+          <a href="http://www.openstreetmap.org/copyright">ODbL</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row cyan-background">
+    <div class="col-sm-12">
+      <hr>
+    </div>
+  </div>
+
+  <div class="cyan-background logos-space">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+        <div class="row">
+          <div style="padding-top: 33px;" class="col-xs-5 col-sm-5 col-md-5 col-md-offset-1 text-right">
+            <img src="/img/eu_flag.png">
+          </div>
+          <div class="col-xs-7 col-sm-7 col-md-6 eu-text">
+            <p>{{::'footer.eu_funded' | translate }}</p>
+          </div>
+            <div ng-show="loggedIn" class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-2">
+                <br><br>
+                <div class="row" style="font-size:11px;">
+                    <p>{{ 'mapby.map_tile' | translate }} <a href="http://stamen.com">Stamen Design</a>, {{ 'mapby.under' | translate }} <a style="text-decoration: underline;" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. {{ 'mapby.data_by' | translate }} <a style="text-decoration: underline;" href="http://openstreetmap.org">OpenStreetMap</a>, {{ 'mapby.under' | translate }} <a  href="http://www.openstreetmap.org/copyright">ODbL</a>.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h5>{{::'footer.project_partners' | translate }}</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-2 col-lg-2 text-center">
+            <a href="http://draxis.gr/" target="_blank">
+              <img src="/img/partners/Logo_Draxis.svg" style="opacity:0.8;">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-lg-2 text-center">
+            <a href="http://www.nilu.no/" target="_blank">
+              <img src="/img/partners/Logo_Nilu.svg">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-lg-2 text-center">
+            <a href="https://www.bund.net/" target="_blank">
+              <img src="/img/partners/Logo_Bund.svg">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-lg-2 text-center">
+            <a href="http://mklab.iti.gr/" target="_blank">
+              <img src="/img/partners/Logo_Certh.svg">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-lg-2 text-center">
+            <a href="http://www.vub.ac.be/" target="_blank">
+              <img src="/img/partners/Logo_Vub.svg">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-2 col-lg-2 text-center">
+            <a href="http://www.onsubject.eu/" target="_blank">
+              <img src="/img/partners/Logo_OnSubject.svg">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-lg-2 text-center">
+            <a style="opacity:0.5;" href="https://capssi.eu/" target="_blank">
+              <img height="60" src="/img/partners/Logo-CAPSSI.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="row footer_copyright">
+    <div class="col-sm-12">
+      <!-- <h6>{{::'footer.copyright' | translate}} &copy hackAIR. {{::'footer.rights_reserved' | translate }}<span class="pull-right">%%VERSION%%</span></h6> -->
+      <h6>
+        <a style="" class="" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">{{::'footer.copyright' | translate}}</a> &copy hackAIR.
+        <span class="pull-right">%%VERSION%%</span>
+      </h6>
+    </div>
+  </footer>
+</section>

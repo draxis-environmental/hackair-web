@@ -1,0 +1,150 @@
+<container-fluid>
+    <section class="gradient-background">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+                 <form class="register-form form" name="registerForm">
+                    <div class="register">
+                        <h3>{{'landing.register.heading' | translate}}</h3>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="auth-input">
+                                    <div class="auth-input-icon">
+                                        <img src="img/icon_user.svg" />
+                                    </div>
+                                    <input type="text" name="username" ng-model="vm.user.username" ng-minlength="3" ng-maxlength="20" required>
+                                    <span class="auth-input-label" style="bottom: -35px!important; line-height: 15px;" ng-hide="registerForm.username.$invalid && registerForm.username.$touched" ng-show="registerForm.username.$valid && registerForm.username.$touched" aria-label="Username">{{ 'auth.username' | translate }}</span>
+                               </div>
+                              <div class="input-error" ng-messages="registerForm.username.$touched && registerForm.username.$error" role="alert">
+                                <div ng-message="required">{{'auth.username_required' | translate}}</div>
+                                <div ng-message="minlength">{{'auth.username_min_length' | translate}}</div>
+                                <div ng-message="maxlength">{{'auth.username_max_length' | translate}}</div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="auth-input">
+                                    <div class="auth-input-icon">
+                                        <img src="img/icon_email.svg" />
+                                    </div>
+                                    <input type="email" name="email" ng-model="vm.user.email" required>
+                                    <span class="auth-input-label" ng-hide="registerForm.email.$touched && registerForm.email.$invalid" ng-show="registerForm.email.$valid && registerForm.email.$touched" aria-label="Email">{{ 'auth.email' | translate }}</span>
+                                </div>
+                                <div class="input-error" ng-messages="registerForm.email.$touched && registerForm.email.$error" role="alert">
+                                  <div ng-message="required">{{'auth.email_required' | translate}}</div>
+                                  <div ng-message="minlength">{{'auth.email_min_length' | translate}}</div>
+                                  <div ng-message="maxlength">{{'auth.email_max_length' | translate}}</div>
+                                  <div ng-message="email">{{'auth.email_invalid' | translate}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="auth-input">
+                                    <div class="auth-input-icon">
+                                        <img src="img/icon_password.svg" />
+                                    </div>
+                                    <input type="password" name="password" ng-model="vm.user.password" required minlength="4">
+                                    <span class="auth-input-label" ng-hide="registerForm.password.$touched && registerForm.password.$invalid" ng-show="registerForm.password.$valid && registerForm.password.$touched" aria-label="Password">{{ 'auth.password' | translate }}</span>
+                                </div>
+                                <div class="input-error" ng-messages="registerForm.password.$touched && registerForm.password.$error" role="alert">
+                                  <div ng-message="required">{{'auth.password_required' | translate}}</div>
+                                  <div ng-message="minlength">{{'auth.password_min_length' | translate}}</div>
+                                  <div ng-message="maxlength">{{'auth.password_max_length' | translate}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="auth-input">
+                                    <div class="auth-input-icon">
+                                        <img src="img/icon_repeat.svg" />
+                                    </div>
+                                    <input type="password" name="confirm" ng-model="vm.user.confirm" required minlength="4" compare-to="vm.user.password" \>
+                                    <span class="auth-input-label" ng-hide="registerForm.confirm.$touched && registerForm.confirm.$invalid" ng-show="registerForm.confirm.$valid && registerForm.confirm.$touched" aria-label="Repeat password">{{ 'auth.repeat_password' | translate }}</span>
+                                </div>
+                                <div class="input-error" ng-messages="registerForm.confirm.$touched && registerForm.confirm.$error" role="alert">
+                                  <div ng-message="required">{{'auth.repeat_password_required' | translate}}</div>
+                                  <div ng-message="minlength">{{'auth.repeat_password_min_length' | translate}}</div>
+                                  <div ng-message="compareTo">{{'auth.repeat_password_no_match' | translate}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" ng-show="{{vm.currentLanguage == 'de'}}">
+                            <div class="col-xs-12">
+                                <div class="auth-input">
+                                    <input type="checkbox" name="permission" ng-model="vm.user.permission" />
+                                    <span style="font-size: 12px; float: left; text-align: justify;" class="">Ja, ich möchte, dass der <a style="color:#b4b4b4" href="https://www.bund.net/" target="_blank">Bund</a> für Umwelt und Naturschutz Deutschland e.V. mich per E-Mail über hackAir und weitere Aktionen auf dem Laufenden hält.<br>
+                                    <span style="">Wenn Sie sich für den Erhalt von weitergehenden Informationen entscheiden, bekommen sie diese direkt vom BUND e.V. per E-Mail zugeschickt. Detaillierte Informationen hierzu finden Sie in den <a style="color:#b4b4b4" href="http://www.hackair.eu/de/allgemeine-geschaeftsbedingungen/?lang=de" target="_blank">Datenschutzhinweisen</a>. Ihre Einwilligung können Sie natürlich jederzeit widerrufen.</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top:20px;">
+                            <div class="col-xs-12 ">
+                                <h6 style="font-size: 11px;">{{'auth.i_want_to_receive_newsletters' | translate}} 
+                                <label class="toggle">
+                                  <input type="checkbox" ng-checked="vm.accept_newsletters" ng-click="vm.toggleNewsletter()">
+                                  <!-- <div class="track">
+                                      <div class="handle"></div>
+                                  </div> -->
+                                </label></h6>
+                            </div>
+                        </div>                        
+
+                        <div class="row">
+                            <div class="col-xs-12 ">
+                                <h6 style="font-size: 11px;">{{'auth.terms_of_service_1' | translate}} <a style="color: #237378; text-decoration: underline;" href="http://www.hackair.eu/terms-and-conditions/" target="_blank">{{'auth.terms_of_service_2' | translate}}</a>
+                                <label class="toggle">
+                                  <input type="checkbox" ng-checked="vm.acceptTerms" ng-click="vm.toggleAcceptTerms()">
+                                  <!-- <div class="track">
+                                      <div class="handle"></div>
+                                  </div> -->
+                                </label></h6>
+                            </div>
+                        </div>
+
+                        <div style="" class="row">
+                            <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-8 ">
+                                <div class="auth-actions text-right">
+                                    <button ng-disabled="!vm.acceptTerms" class="btn btn-primary" ng-click="vm.register()">{{ 'auth.register' | translate }}</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row social-login">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-12 ">
+                                        <h2>{{'auth.register_social_network' | translate}}</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-lg-6 col-md-6 col-md-offset-0">
+                                        <button class="btn btn-facebook btn-sm">Facebook</button>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
+                                        <button class="btn btn-twitter btn-sm">Twitter</button>
+                                    </div>
+                                </div>
+<!--                                 <div class="row">
+                                    <div class="col-xs-12 ">
+                                        <h6 style="border: 2px solid; padding: 4px; font-size: 11px; letter-spacing: 0.5px;">{{'auth.terms_of_service_1' | translate}} <a style="color: #237378; text-decoration: underline;" href="http://hackair.onsubject.eu/terms-and-conditions/" target="_blank">{{'auth.terms_of_service_2' | translate}}</a></h6>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer-section></footer-section>
+</container-fluid>
+
+
+
+
+

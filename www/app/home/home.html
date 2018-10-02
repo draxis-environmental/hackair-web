@@ -1,0 +1,105 @@
+<style>
+  .city-search-autocomplete {
+    padding-left: 5px;
+    z-index: 500;
+    text-align: center;
+    line-height: 32px;
+  }
+
+</style>
+
+<container-fluid>
+
+  <!-- map section -->
+  <section class="dashboard">
+    <!-- <div class="col-md-offset-2 col-md-6"> -->
+    <city-search placeholder="{{'hom.search_place_address'| translate}}" mapaddress="true" ng-model="vm.cityHome" required name="address"
+      location-changed="vm.locationChanged" searchmap="true" radius="150000" />
+    <!-- </div>    -->
+    <map></map>
+
+    <div class="graph-history" ng-show="vm.selectedCity != undefined" style="background-color:#e0f4f5; padding-top: 40px;padding-bottom: 40px">
+
+
+      <div class="row">
+
+
+        <div class="col-xs-12 col-sm-12">
+          <div class="panel">
+            <div class="row border-bottom">
+              <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                <h6 class="graph-title">{{'home.aq_history' | translate}} {{vm.selectedCity.name}}</h6>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                <select ng-model="selectedRange" ng-options="dateRange as dateRange.name for dateRange in rangeOptions" ng-change="vm.chartChange()">
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <chart id="AQHistoryChart" type="barChart">
+
+                </chart>
+
+
+              </div>
+              <!--<div class="col-xs-1 no-padding">
+                  <div id="chart-legends"></div>
+                </div>-->
+            </div>
+            <table class="row historyTable" style="margin-left:40px;">
+              <tr class="spacerow">
+                <td class="indexRange bad">{{'air_quality.from' | translate}} 3.5</td>
+                <td class="explanationTitle">{{'air_quality.bad' | translate}}</td>
+              </tr>
+              <tr class="spacerow">
+                <td class="indexRange medium">{{'air_quality.from' | translate}} 2.5 {{'air_quality.to' | translate}} 3.5</td>
+                <td class="explanationTitle">{{'air_quality.medium' | translate}}</td>
+              </tr>
+              <tr class="spacerow">
+                <td class="indexRange good">{{'air_quality.from' | translate}} 1.5 {{'air_quality.to' | translate}} 2.5</td>
+                <td class="explanationTitle">{{'air_quality.good' | translate}}</td>
+              </tr>
+              <tr class="">
+                <td class="indexRange very_good">{{'air_quality.from' | translate}} 0 {{'air_quality.to' | translate}} 1.5</td>
+                <td class="explanationTitle">{{'air_quality.very_good' | translate}}</td>
+              </tr>
+            </table>
+
+            <div class="row explanationText">
+              <span style="border: 1px solid #e4e4e4; padding:3px;">{{'air_quality.disclaimers.disclaimer_quality_history' | translate}}</span>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- <div class="col-xs-12 col-sm-4">
+            <div class="panel">
+              <div class="row" >
+                <div class="col-xs-12">
+                  <h6 class="graph-title">{{'home.data_sources' | translate}}</h6>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-xs-12">
+                  <!--
+                  <chart id="DonutChart" type="donutChart">
+                  -->
+
+        <!-- </chart>
+      </div> -->
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer-section></footer-section>
+</container-fluid>

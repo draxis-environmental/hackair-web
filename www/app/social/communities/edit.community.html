@@ -1,0 +1,59 @@
+<section class="social">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="search item">
+            <h3>{{'social.search_heading' | translate}}</h3>
+            <input type="text" placeholder="{{'social.search_placeholder' | translate}}"  ng-model="vm.asyncSelected" uib-typeahead="person.name for person in vm.search($viewValue)"
+                   typeahead-loading="loadingLocations" typeahead-no-results="noResults" typeahead-on-select="onSelect($item)">
+            <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+            <div ng-show="noResults">
+              <i class="glyphicon glyphicon-remove"></i> {{ 'community.no_results' | translate }}
+            </div>
+          </div>
+          <hr>
+          <div class="news-feed item">
+            <h3>{{'social.my_news_feed_heading' | translate}}</h3>
+          </div>
+          <hr>
+          <div class="my-communities">
+            <h3>{{'social.my_communities_heading' | translate}}</h3>
+            <ul class="list-group">
+              <li ng-repeat="community in vm.communities" style="padding: 10px 0px;">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img ng-src="{{community.profile_picture || 'img/u_i_community_avatar_empty.svg'}}" />
+                  </div>
+                  <div class="col-xs-7">
+                    <h2><a ui-sref="community({id:community.id})">{{ community.name }}</a></h2>
+                  </div>
+                  <div class="col-xs-3">
+                    <button class="button button-calm pull-right" ng-if="vm.amCommunityOwner(community.owner_id)" ui-sref="edit-community.update({id:community.id})">{{'communities.edit.navigation.edit' | translate}}</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="new-community item">
+            <a class="text-center" ui-sref="new-community">
+              <img src="/img/icons/icon_small_create.svg">
+              {{ 'social.create_new_community' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8 no-padding">
+        <div class="card">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" ui-sref-active="active"><a ui-sref="edit-community.update" aria-controls="update" role="tab">{{'communities.edit.navigation.update' | translate}}</a></li>
+            <li role="presentation" ui-sref-active="active"><a ui-sref="edit-community.delete" aria-controls="delete" role="tab">{{'communities.edit.navigation.delete' | translate}}</a></li>
+          </ul>
+            <!-- Tab panes -->
+          <ui-view></ui-view>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer-section></footer-section>

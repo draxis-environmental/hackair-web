@@ -1,0 +1,152 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+*:focus,
+*:focus:active,
+*:active:focus {
+  outline: none !important; }
+
+body,
+html,
+.container,
+.container-fluid,
+ui-view {
+  min-height: 100%; }
+
+.card {
+  margin: 20px;
+  background: #fff;
+  box-shadow: 0 1px 2px #00a3ac; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+#loading-bar .bar {
+  background: #ff6666 !important; }
+
+#loading-bar-spinner .spinner-icon {
+  border-top-color: #ff6666 !important;
+  border-left-color: #ff6666 !important; }
+
+.no-right-padding {
+  padding-right: 0; }
+
+.button-calm {
+  min-height: 24px;
+  max-height: 24px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-family: "noto_sansbold";
+  font-size: 11px;
+  box-shadow: 0px 2px 2px rgba(1, 43, 58, 0.24);
+  color: white;
+  background-color: #00a3ac;
+  border: none;
+  border-radius: 2px; }
+
+.button-assertive {
+  min-height: 24px;
+  max-height: 24px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-family: "noto_sansbold";
+  font-size: 11px;
+  box-shadow: 0px 2px 2px rgba(1, 43, 58, 0.24);
+  color: white;
+  background-color: #ff6666;
+  border: none;
+  border-radius: 2px; }
+
+.nav-tabs {
+  text-align: center;
+  border-bottom: solid 2px rgba(0, 163, 172, 0.6); }
+  .nav-tabs > li {
+    display: inline-block;
+    width: 16.6%; }
+    .nav-tabs > li > a {
+      margin: 0;
+      padding: 5px 10px;
+      font-family: 'noto_sansregular';
+      transition: 0.3s ease;
+      box-shadow: none;
+      font-size: 14px; }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus {
+      outline: none;
+      margin: 0;
+      font-family: 'noto_sansbold';
+      box-shadow: 0 -2px 0px rgba(0, 163, 172, 0.6) inset; }
+
+.popup-dialog .popup-content .popup-footer {
+  height: 100% !important; }
+
+.popup-dialog .popup-content .popup-header .popup-badge {
+  margin: 20px auto -10px auto !important; }
+
+.popup-dialog .popup-content .popup-body p {
+  width: 234px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  padding: 0px 0px !important; }
+
+.historyTable {
+  font-size: 14px; }
+
+.explanationTitle {
+  color: #666666;
+  padding-left: 15px; }
+
+.explanationText {
+  padding: 20px 0px 10px 30px;
+  font-size: 13px;
+  color: #666666; }
+
+.indexRange {
+  width: 150px;
+  color: white;
+  text-align: center; }
+
+.indexRange.bad {
+  background-color: #ef4723; }
+
+.indexRange.medium {
+  background-color: #f68e1f; }
+
+.indexRange.good {
+  background-color: #fecc09; }
+
+.indexRange.very_good {
+  background-color: #7dbb42; }
+
+.spacerow {
+  border-bottom: 2px solid white; }
+
+.blink_me {
+  animation: blinker 4s linear infinite;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 12px;
+  padding: 2px 0px 2px 0px;
+  text-align: center;
+  background-color: #ff5958;
+  color: white; }
+
+@keyframes blinker {
+  40% {
+    opacity: 0; } }
+
+.footer_copyright a {
+  color: #00a3ac; }
+
+.footer_copyright a:hover {
+  color: black; }
+
+#card-table {
+  display: none;
+  margin-top: 30px; }

@@ -1,0 +1,59 @@
+<profile-navigation></profile-navigation>
+<div class="tab-content">
+  <!-- Sensors -->
+  <div role="tabpanel" class="tab-pane active" id="sensors">
+    <div class="content">
+      <h3>{{'profile.sensors.my_sensors_heading' | translate}}
+        <button ui-sref="profile.add-sensor" class="button button-sensor pull-right">{{'profile.sensors.add_a_new_sensor' | translate}}</button>
+      </h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+        </div>
+        <div class="col-xs-12 col-sm-4">
+        </div>
+      </div>
+      <!-- map view -->
+      <div class="row">
+        <div class="col-xs-12 sensor-map" id="map">
+        </div>
+      </div>
+      <!-- / map view-->
+      <!-- for each sensor -->
+      <div class="row" ng-repeat="sensor in vm.sensors">
+        <div class="col-xs-3 col-sm-3 no-padding text-center">
+          <img src="/img/temp/sensor_0.png" class="sensor-photo" alt="sensor photo">
+        </div>
+        <div class="col-xs-8 col-sm-8 no-padding">
+          <h4>{{sensor.name}}
+            <span class="sensor_id">{{ 'sensor.sensor_id' | translate }} {{sensor.id}}</span>
+          </h4>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 no-padding">
+              <h6>
+                <img src="/img/icons/icon_small_pin_inactive.svg"> {{sensor.location.properties.label_short}}</h6>
+            </div>
+            <div class="col-xs-12  col-sm-4 no-padding">
+              <h6>
+                <img src="/img/icons/icon_small_sensor_inactive.svg">
+                <span ng-if=" sensor.type === 'arduino' ">{{ 'hackair.hackair_home' | translate }}</span>
+                <span ng-if=" sensor.type === 'bleair' ">{{ 'hackair.hackair_mobile' | translate }}</span>
+              </h6>
+            </div>
+            <div class="col-xs-12 col-sm-4 no-padding">
+              <h6>
+                <img src="/img/icons/icon_small_latest.svg"> {{sensor.fromNow}} </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-1 no-padding">
+          <a ui-sref="profile.view-sensor({id:user.id, sensorId: sensor.id})">
+            <img class="chevron-right" src="/img/icons/icon_small_chevron_dark_right.svg">
+          </a>
+        </div>
+        <hr class="soft-separator">
+      </div>
+      <!-- / for each sensor -->
+    </div>
+  </div>
+  <!-- / Sensors -->
+</div>

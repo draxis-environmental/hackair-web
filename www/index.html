@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="icon" type="image/png" href="img/icons/fusion.png">
+  <link rel="shortcut icon" type="image/png" href="img/icons/fusion.png">
+  <title>hackAIR</title>
+
+  <!-- Google Analytics -->
+  <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-11231189-2', 'auto');
+
+    ga('require', 'eventTracker');
+    ga('require', 'outboundLinkTracker');
+    ga('require', 'urlChangeTracker');
+
+    ga('send', 'pageview');
+
+  </script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <script async src="autotrack.js"></script>
+  <!-- /Google Analytics -->
+
+  <!-- compiled css output -->
+  <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/lib/ngToast/dist/ngToast.min.css" rel="stylesheet">
+  <link href="/lib/angular-ui-select/dist/select.min.css" rel="stylesheet">
+  <link href='/lib/angular-loading-bar/build/loading-bar.min.css' rel='stylesheet' />
+
+  <link href="/css/theme.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/bundle.min.css?%%VERSION%%" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.7/dt-1.10.18/datatables.min.css" /> -->
+  <link href="/css/base.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/landing/landing.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/auth/auth.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/profile/profile.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/components/navigation/navigation.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/components/map/map.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/home/home.css?%%VERSION%%" rel="stylesheet">
+  <link href="/css/social/social.css?%%VERSION%%" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="/css/style.css?%%VERSION%%" rel="stylesheet">
+  <script src="https://use.fontawesome.com/6973a411fe.js"></script>
+  <!-- fonts -->
+  <link href="/fonts/fonts.css" rel="stylesheet">
+  <!-- leaflet style -->
+  <link href="/lib/leaflet/dist/leaflet.css" rel="stylesheet">
+  <link href="lib/leaflet.markercluster/dist/MarkerCluster.css" rel="stylesheet">
+  <link href="lib/leaflet.markercluster/dist/MarkerCluster.Default.css" rel="stylesheet">
+
+  <!-- fullscreen map plugin -->
+  <!-- <link rel="stylesheet" href="/lib/brunob-leaflet-fullscreen/Control.FullScreen.css" /> -->
+
+  <base href="/" target="/">
+
+  <!-- angularjs js -->
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/lib/angular/angular.min.js"></script>
+  <script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/lib/angular-touch/angular-touch.js"></script>
+  <script src="/lib/angular-ui-select/dist/select.min.js"></script>
+  <script src="/lib/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+  <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="/lib/angular-animate/angular-animate.min.js"></script>
+  <script src="/lib/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="/lib/ngstorage/ngStorage.min.js"></script>
+  <script src='/lib/angular-loading-bar/build/loading-bar.min.js'></script>
+  <script src="/lib/leaflet/dist/leaflet.js"></script>
+  <script src="lib/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <!-- <script src="/lib/brunob-leaflet-fullscreen/Control.FullScreen.js"></script> -->
+
+  <script src="/lib/angular-translate/angular-translate.js"></script>
+  <script src="/lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+  <script src="/lib/angular-dynamic-locale/dist/tmhDynamicLocale.js"></script>
+  <script src="/lib/lodash/dist/lodash.js"></script>
+  <script src="/lib/restangular/dist/restangular.js"></script>
+  <script src="/lib/ngToast/dist/ngToast.min.js"></script>
+  <script src="/lib/angular-messages/angular-messages.js"></script>
+  <script src="/lib/moment/min/moment-with-locales.min.js"></script>
+  <script src="/lib/moment-timezone/builds/moment-timezone.min.js"></script>
+  <script src="/lib/moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js"></script>
+  <script src="/lib/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
+  <!-- <script src="/lib/moment/min/moment.min.js"></script> -->
+  <script src="/lib/chart.js/dist/Chart.js"></script>
+  <script src="/lib/ng-file-upload/ng-file-upload-shim.min.js"></script>
+  <!-- for no html5 browsers support -->
+  <script src="/lib/ng-file-upload/ng-file-upload.min.js"></script>
+  <script src="/lib/angular-language-picker/dist/angular-language-picker.min.js"></script>
+  <script src="/lib/angular-bootstrap-confirm/dist/angular-bootstrap-confirm.js"></script>
+
+  <script type="text/javascript" src="/lib/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+  <script type="text/javascript" src="/lib/angular-bootstrap-datetimepicker/src/js/datetimepicker.templates.js"></script>
+
+
+  <!--<script src='/lib/d3/d3.js'></script>-->
+
+
+
+  <!-- your app's js -->
+  <script src="/app/app.module.js?%%VERSION%%"></script>
+  <script src="/app/app.constants.js?%%VERSION%%"></script>
+  <script src="/app/core/router/router.module.js?%%VERSION%%"></script>
+  <script src="/app/core/core.module.js?%%VERSION%%"></script>
+  <script src="/common/services/services.module.js?%%VERSION%%"></script>
+  <script src="/app/auth/auth.module.js?%%VERSION%%"></script>
+  <script src="/app/auth/login.directive.js?%%VERSION%%"></script>
+  <script src="/app/auth/compare-to.directive.js?%%VERSION%%"></script>
+  <script src="/app/layout/layout.module.js?%%VERSION%%"></script>
+  <script src="/app/landing/landing.module.js?%%VERSION%%"></script>
+  <script src="/app/home/home.module.js?%%VERSION%%"></script>
+  <script src="/app/profile/profile.module.js?%%VERSION%%"></script>
+  <script src="/app/profile/secondary.profile/secondary.profile.directive.js?%%VERSION%%"></script>
+  <script src="/app/map/map.module.js?%%VERSION%%"></script>
+  <script src="/app/components/components.module.js?%%VERSION%%"></script>
+  <script src="/app/components/mission/mission.module.js?%%VERSION%%"></script>
+  <script src="/app/social/social.module.js?%%VERSION%%"></script>
+  <script src="/app/components/chartCompare/chartCompare.module.js?%%VERSION%%"></script>
+
+
+  <script src="/app/core/config.js?%%VERSION%%"></script>
+  <script src="/app/core/router/router-helper.provider.js?%%VERSION%%"></script>
+
+  <script src="/common/services/data.service.js?%%VERSION%%"></script>
+  <script src="/common/services/location.service.js?%%VERSION%%"></script>
+  <script src="/common/services/upload.service.js?%%VERSION%%"></script>
+
+  <script src="/app/auth/auth.controller.js?%%VERSION%%"></script>
+  <script src="/app/auth/auth.service.js?%%VERSION%%"></script>
+  <script src="/app/home/home.controller.js?%%VERSION%%"></script>
+  <script src="/app/profile/profile.controller.js?%%VERSION%%"></script>
+  <script src="/app/profile/sensors/sensors.module.js?%%VERSION%%"></script>
+  <script src="/app/profile/sensors/sensors.controller.js?%%VERSION%%"></script>
+  <script src="/app/profile/sensors/sensors.route.js?%%VERSION%%"></script>
+  <script src="/app/components/chartCompare/chartCompare.route.js?%%VERSION%%"></script>
+
+  <script src="/app/core/core.route.js?%%VERSION%%"></script>
+  <script src="/app/auth/auth.route.js?%%VERSION%%"></script>
+  <script src="/app/landing/landing.route.js?%%VERSION%%"></script>
+  <script src="/app/home/home.route.js?%%VERSION%%"></script>
+  <script src="/app/profile/profile.route.js?%%VERSION%%"></script>
+  <script src="/app/components/mission/mission.route.js?%%VERSION%%"></script>
+  <script src="/app/social/social.route.js?%%VERSION%%"></script>
+
+  <script src="/app/components/chartCompare/chartCompare.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/navigation/navigation.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/footer/footer.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/profileNavigation/profileNavigation.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/chart/chart.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/chart/chart.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/airquality/airQualityInfo.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/airquality/airQualityInfo.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/citySearch/citySearch.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/cityselect/citySelect.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/cityselect/citySelect.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/mission/mission.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/mission/mission.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/notificationCard/notification.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/notificationCard/notification.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/badgeNotification/badgeNotification.directive.js?%%VERSION%%"></script>
+  <script src="/app/components/badgeNotification/badgeNotification.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/mission/missionModal.controller.js?%%VERSION%%"></script>
+  <script src="/app/social/social.controller.js?%%VERSION%%"></script>
+  <script src="/app/social/social.service.js?%%VERSION%%"></script>
+  <script src="/app/social/communities/community.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/chartCompare/chartCompare.directive.js?%%VERSION%%"></script>
+
+
+  <script src="/app/components/map/map.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/components.controller.js?%%VERSION%%"></script>
+  <script src="/app/components/map/map.service.js?%%VERSION%%"></script>
+  <script src="/app/components/map/map.directive.js?%%VERSION%%"></script>
+
+  <script src="app/profile/public/public.controller.js?%%VERSION%%"></script>
+  <script src="app/profile/public/public.route.js?%%VERSION%%"></script>
+
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?language=en&key=AIzaSyACOaGi2tXOyTGhMxMxaZTnofVPSVkM_kw&libraries=places"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.7/dt-1.10.18/datatables.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+
+</head>
+
+<body ng-app="hackair">
+  <toast></toast>
+  <landing-navigation ng-show="!loggedIn"></landing-navigation>
+  <navigation ng-show="loggedIn"></navigation>
+
+  <ui-view class="main"></ui-view>
+</body>
+
+</html>

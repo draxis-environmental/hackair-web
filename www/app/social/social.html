@@ -1,0 +1,89 @@
+<section class="social">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="card">
+          <div class="search item">
+            <h3>{{'social.search_heading' | translate}}</h3>
+            <input type="text" placeholder="{{'social.search_placeholder' | translate}}" ng-model="vm.asyncSelected" uib-typeahead="person.name for person in vm.search($viewValue)"
+              typeahead-loading="loadingResults" typeahead-no-results="noResults" typeahead-on-select="onSelect($item)">
+            <i ng-show="loadingResults" class="glyphicon glyphicon-refresh"></i>
+            <div ng-show="noResults">
+              <i class="glyphicon glyphicon-remove"></i> {{ 'community.no_results' | translate }}
+            </div>
+          </div>
+          <hr>
+          <div class="news-feed item">
+            <h3>{{'social.my_news_feed_heading' | translate}}</h3>
+          </div>
+          <hr>
+          <div class="my-communities">
+            <h3>{{'social.my_communities_heading' | translate}}</h3>
+            <ul class="list-group">
+              <li ng-repeat="community in vm.communities" style="padding: 10px 0px;">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img ng-src="{{community.profile_picture || 'img/u_i_community_avatar_empty.svg'}}" />
+                  </div>
+                  <div class="col-xs-7">
+                    <h2>
+                      <a ui-sref="community({id:community.id})">{{ community.name }}</a>
+                    </h2>
+                  </div>
+                  <div class="col-xs-3">
+                    <button class="button button-calm pull-right" ng-if="vm.amCommunityOwner(community.owner_id)" ui-sref="edit-community.update({id:community.id})">{{'communities.edit.navigation.edit' | translate}}</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="new-community item">
+            <a class="text-center" ui-sref="new-community">
+              <img src="/img/icons/icon_small_create.svg"> {{ 'social.create_new_community' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-8 news-feed">
+        <div class="card text-center" ng-repeat="feed_item in vm.socialFeed | limitTo:10">
+          <div>
+            <p>
+              <img class="avatar img-circle" src="{{feed_item.avatar}}" />
+              <a ui-sref="public.overview({id:feed_item.user_id})">
+                <span class="name">{{ feed_item.name }}</span>
+              </a>
+              {{ feed_item.action }}
+              <h6>{{feed_item.postDate}}</h6>
+            </p>
+          </div>
+          <img class="photo img-responsive" ng-if="feed_item.social_activity_type === 'UploadSkyPhoto' || feed_item.social_activity_type === 'UpdateProfilePicture'"
+            ng-src="{{feed_item.photo || feed_item.avatar}}">
+          <!--
+            <img src="/img/ui/icon_like_inactive.svg"> <a href="#">Like</a>
+          -->
+        </div>
+      </div>
+
+      <!-- <div class="col-xs-12 col-md-4">
+        <div class="card">
+          <div class="social-feed">
+            <h3>{{'social.notifications' | translate}}</h3>
+            <hr>
+            <ul class="list-group">
+              <li ng-repeat="feed in vm.socialFeed | limitTo:5">
+                <img class="avatar" src="{{feed.avatar}}" />
+                <div class="feed-text" ng-class="{'has-image': feed.photo != undefined}">
+                  <p><span class="name">{{feed.name}}</span> {{feed.action}}</p>
+                  <h6><img src="/img/ui/icon_like_inactive.svg">{{feed.postDate}}</h6>
+                  <img class="photo img-responsive" ng-if="feed.social_activity_type === 'UploadSkyPhoto' || feed.social_activity_type === 'UpdateProfilePicture'" ng-src="{{feed.photo || feed.avatar}}">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<footer-section></footer-section>

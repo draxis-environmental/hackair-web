@@ -1,0 +1,22 @@
+<div class="popup">
+  <div class="popup-dialog">
+    <!-- popup content-->
+    <div class="popup-content">
+      <div class="popup-header">
+        <button type="button" ng-click="ok()" class="close">&times;</button>
+        <div class="popup-badge">
+          <img ng-src="{{photoUrl}}" ng-click="" alt="">
+          </a>
+        </div>
+        <h4 class="popup-title">{{name}}</h4>
+      </div>
+      <div class="popup-body">
+        <p>{{description}}</p>
+      </div>
+      <div class="popup-footer">
+        <h6 class="share">
+          <img src="/img/ui/icon_small_share.svg">{{ 'air_quality.share' | translate }}</h6>
+      </div>
+    </div>
+  </div>
+</div>

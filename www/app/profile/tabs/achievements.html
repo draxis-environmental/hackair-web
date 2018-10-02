@@ -1,0 +1,37 @@
+<profile-navigation></profile-navigation>
+<div class="tab-content">
+  <!-- Achievements Tab -->
+  <div role="tabpanel" class="tab-pane active" id="achievements">
+    <div class="content">
+      <h3>{{'profile.achievements.acquired_badges_heading' | translate}}</h3>
+      <!-- acquired badges row -->
+      <div class="row">
+
+        <div class="col-xs-6 col-sm-3 text-center item-badge" ng-repeat="achievement in vm.acquired">
+          <a href="#" ng-click="vm.BadgePopup(achievement, 'acquired')">
+            <img ng-src="/img/badges/Badges_with_bg/{{achievement.display_picture}}" ng-click="" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- / acquired badges row -->
+
+      <hr class="soft-separator">
+      <h3>{{'profile.achievements.available_badges_heading' | translate}}
+        <span id="numBadges">({{vm.available.length}})</span>
+      </h3>
+      <!-- available badges row -->
+      <div class="row available-badges">
+
+        <div class="col-xs-6 col-sm-3 text-center item-badge" ng-class="{'is-acquired': achievement.isAquired}" ng-repeat="achievement in vm.available">
+          <a href="#" ng-click="vm.BadgePopup(achievement, 'available')">
+            <img ng-src="/img/badges/Badges_with_bg/{{achievement.display_picture}}" ng-click="" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- / available badges row -->
+    </div>
+    <!-- / content div -->
+  </div>
+  <!-- / tabpanel div -->
+  <!-- / Achievements Tab -->
+</div>

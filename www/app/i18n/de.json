@@ -1,0 +1,590 @@
+{
+  "landing": {
+    "about": {
+      "menu_heading": "Über uns",
+      "headline": "Öffentliche Wahrnehmung der Luftqualität",
+      "aim": "hackAIR ist eine offene Plattform für Luftqualität in Europa, die verschiedene Datenquellen und eigene Messungen zusammenführt und so Bürger*innen besser informiert.",
+      "learn_more": "Finde mehr heraus",
+      "why_aq_matters": "Wieso ist Luftqualität wichtig?",
+      "did_you_know": "Wusstest Du, dass 90% der Europäer*innen, die in Städten wohnen, Luftverschmutzung ausgesetzt sind, die als gesundheitsschädlich eingestuft wird?",
+      "knowing_about_aq": "Die Luftqualität zu kennen, ist der erste Schritt zu ihrer Verbesserung.",
+      "why_should_i_get_involved": "Warum sollte ich mitmachen?",
+      "protect": "Schützen",
+      "reduce_your_exposure": "Durch die Wahl Deiner Fahrtroute kannst Du beinflussen, wie viel Luftverschmutzung Du ausgesetzt bist.",
+      "preserve": "Schützen",
+      "avoid_polluting": "Vermeide es, selbst die Luft zu verunreinigen (z.B. mit der Wahl Deines Fortbewegungsmittels).",
+      "participate": "Mach mit!",
+      "take_part": "Beteilige Dich an der öffentlichen Debatte um Luftqualität.",
+      "take_part_now": "Mach jetzt mit!",
+      "join_the_movement": "Mach mit bei dem Netzwerk zu Verbesserung der Luftqualität"
+    },
+    "how_it_works": {
+      "menu_heading": "Entdecken",
+      "open_technology_platform": "Eine offene Datenbank für Informationen über Luftqualität",
+      "web_app": "Web App",
+      "web_app_desc": "Flexible Web App für Informationen über die Luftqualität vor Ort",
+      "mobile_app": "Smartphone App",
+      "mobile_app_desc": "Erhalte personalisierte Informationen über die Luftqualität und füge selbst Feinstaubmessungen über Smartphone-Fotos hinzu.",
+      "our_data_sources": "Füge Feinstaubmessungen hinzu",
+      "mobile_photos": "Smartphone-Fotos",
+      "mobile_photos_desc": "Nutze die hackAIR App, um Informationen über Luftqualität zu erhalten und mit Smartphone-Fotos Daten zu sammeln.",
+      "open_sensors": "Feinstaub-Sensoren",
+      "open_sensors_desc": "Feinstaubdaten sammeln, das ist nicht nur was für Expert*innen. Mit ein paar elektronischen Geräten kann jede*r seinen/ihren eigenen Sensor bauen, an nur einem Nachmittag.",
+      "low_tech": "Messdaten von Tetra-Pak-Sensoren",
+      "low_tech_desc": "Eine einfache Möglichkeit, mit einem Trinkkarton, einer Trägercreme und ein bisschen Zeit die Luftverschmutzung zu messen.",
+      "open_datasets": "Öffentliche Luftqualitätsdaten",
+      "open_datasets_desc": "hackAIR zeigt Dir Feinstaubdaten aus verschiedenen Quellen. Finde heraus, wie du selbst Messdaten hinzufügen kannst oder die hackAIR Messdaten herunterladen kannst.",
+      "register_now": "Registriere Dich jetzt!",
+      "access_recommendations": "Erhalte personalisierte Informationen und füge selbst Daten hinzu."
+    },
+    "register": {
+      "menu_heading": "Anmelden",
+      "heading": "Registriere Dich mit Deiner E-Mail Adresse.",
+      "errors": {
+        "username": {
+          "required": "Du hast keinen Benutzernamen eingegeben.",
+          "minlength": "Dein Benutzername ist zu kurz.",
+          "maxlength": "Dein Benutzername ist zu lang."
+        },
+        "email": {
+          "required": "Du hast keine gültige E-Mail Adresse eingegeben.",
+          "invalid": "Du hast keine gültige E-Mail Adresse eingegeben.",
+          "minlength": "Deine E-Mail Adresse ist zu kurz.",
+          "maxlength": "Deine E-Mail Adresse ist zu lang."
+        },
+        "password": {
+          "required": "Du hast kein Passwort eingegeben.",
+          "minlength": "Dein Passwort ist zu kurz.",
+          "maxlength": "Dein Passwort ist zu lang."
+        }
+      },
+      "or_social_network": "oder melde Dich mit einem Social-Media Profil an.",
+      "terms": "Mit Deiner Registrierung bei hackAIR akzeptierst du unsere allgemeinen Geschäftsbedingungen."
+    },
+    "download": {
+      "download_the_app": "Lade die App herunter",
+      "get_access": "Erhalte Zugang zu allen hackAIR Features über die hackAIR App für iOS und Android."
+    }
+  },
+  "footer": {
+    "links": "Links",
+    "project_website": "Projekt Website",
+    "privacy_policy": "Datenschutz-Bestimmungen",
+    "our_news": "Neuigkeiten",
+    "help": "Hilfe (FAQ)",
+    "legal": "AGBs",
+    "social_networks": "Soziale Medien",
+    "eu_funded": "Dieses Projekt wird gefördert durch das Forschungs- und Innovationsprogramm Horizon 2020 der Europäischen Union unter der Fördervereinbarungsnr. 688363.",
+    "project_partners": "Projektpartner",
+    "copyright": "Copyright",
+    "rights_reserved": "Alle Rechte vorbehalten.",
+    "download_the_app": "Lade die App herunter",
+    "terms_and_conditions": "Geschäftsbedingungen",
+    "support": "Hilfe",
+    "tutorials": "Anleitungen"
+  },
+  "general": {
+    "settings": "Einstellungen",
+    "install_cots_sensors": "Richte Tetra-Pak-Sensoren ein.",
+    "install_hackair_cardboard_sensors": "Füge einen Tetra-Pak-Sensor hinzu",
+    "add_sensor_measurement": "Füge Messung hinzu",
+    "invite_friends": "Lade Freunde ein",
+    "about": "Über uns",
+    "logout": "Abmelden",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "yes": "Ja",
+    "no": "Nein",
+    "follow": "Folgen",
+    "unfollow": "Entfolgen"
+  },
+  "sections": {
+    "profile": "Mein Profil",
+    "edit_my_profile": "Mein Profil bearbeiten",
+    "my_sensors": "Meine Sensoren"
+  },
+  "intro": {
+    "skip": "Überspringen"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "reset_password_heading": "Setze Dein Passwort zurück",
+    "email": "E-Mail",
+    "email_required": "Du hast keine E-Mail Adresse angegeben.",
+    "email_min_length": "Deine E-Mail Adresse ist zu kurz.",
+    "email_max_length": "Deine E-Mail-Adresse ist zu lang.",
+    "email_invalid": "Deine E-Mail-Adresse ist nicht gültig.",
+    "password": "Passwort",
+    "password_required": "Du hast kein Passwort eingegeben.",
+    "password_min_length": "Dein Passwort ist zu kurz.",
+    "password_max_length": "Dein Passwort ist zu lang.",
+    "forgot_password": "Passwort vergessen?",
+    "repeat_password": "Wiederhole bitte Dein Passwort.",
+    "repeat_password_required": "Du musst Dein Passwort wiederholen.",
+    "repeat_password_min_length": "Dein wiederholtes Passwort ist zu kurz.",
+    "repeat_password_no_match": "Deine Passwörter stimmen nicht überein!",
+    "username": "Vorsicht: Dein Benutzername wird öffentlich gemacht. Wenn gewollt, verwende keine persönlichen Informationen.",
+    "username_required": "Du hast keinen Benutzernamen angegeben.",
+    "username_min_length": "Dein Benutzername ist zu kurz.",
+    "username_max_length": "Dein Benutzername ist zu lang.",
+    "reset": "Zurücksetzen",
+    "register_social_network": "oder registriere dich über ein soziales Netzwerk.",
+    "terms_of_service_1": "Mit Deiner Registrierung auf hackAIR stimmst Du unseren",
+    "terms_of_service_2": "Geschäftsbedingungen zu.",
+    "i_want_to_receive_newsletters": "Ich möchte einen Newsletter erhalten",
+    "terms_of_service": "Mit Deiner Registrierung bei hackAIR akzeptierst du unsere allgemeinen Geschäftsbedingungen.",
+    "activate": {
+      "heading": "Aktiviere Dein Konto!",
+      "click_to_activate": "Klicke hier, um dein Konto zu aktivieren und deine Registrierung abzuschliessen.",
+      "activate": "Aktivieren"
+    },
+    "confirm-email": {
+      "heading": "Bestätige Deine E-Mail Adresse.",
+      "confirm_email_to_register": "Klicke hier, um Deine E-Mail Adresse zu bestätigen und Deine Registrierung abzuschliessen.",
+      "confirm": "Bestätigen",
+      "confirmed": "Bestätigt!",
+      "successful_registration": "Du bist erfolgreich auf der hackAIR Plattform registriert!",
+      "you_can_now_login": "Du kannst Dich jetzt mit Deinem Konto anmelden.",
+      "email_not_confirmed": "Deine E-Mail ist bestätigt!",
+      "click_activation_link_again": "Bitte klicke noch einmal auf den Aktivierungslink in der Registrierungs-E-Mail von hackAIR."
+    },
+    "unsubscribe": {
+      "heading": "Abonnement kündigen",
+      "enter_email_to_unsubscribe": "Gib hier Deine E-Mail Adresse an, um dich von dem Newsletter abzumelden.",
+      "unsubscribe": "Abonnement kündigen",
+      "unsubscribed": "Erfolgreich abgemeldet!",
+      "ubsubscribed_successfully": "Du hast Dich erfolgreich abgemeldet!",
+      "something_went_wrong": "Da ist irgendetwas schief gelaufen.",
+      "try_again": "Versuch es bitte nochmal."
+    },
+    "login_view": {
+      "heading": "Melde dich mit deinem Konto an",
+      "via_social_network": "oder über ein soziales Netzwerk.",
+      "new_to_hackair": "Neu bei hackAIR?",
+      "register_here": "Registriere Dich hier.",
+      "forgot_password": "PASSWORT VERGESSEN?",
+      "forgot_password_text": "Hast Du Dein Passwort vergessen? Gib Deine E-Mail-Adresse ein und Du bekommst eine E-Mail mit der Möglichkeit das Passwort zurück zu setzen Enter your email and we will send you instructions on how to reset it."
+    }
+  },
+  "home": {
+    "navigation": {
+      "contribute": "Sammel auch Daten",
+      "dashboard": "Pinnwand",
+      "social": "Sozialraum",
+      "forum": "Forum",
+      "profile": "Profil",
+      "logout": "Abmelden"
+    },
+    "share_aq_heading": "Teile Deine Daten",
+    "aq_history": "Air quality history in ",
+    "data_sources": "Datenquellen",
+    "prepared_missions": "Wir haben eine neue Mission für Dich. Schau sie dir an.",
+    "new_badge_notification": "Glückwunsch! Du hast gerade eine",
+    "new_badge_notification_continue": "Auszeichnung erhalten!"
+  },
+  "profile": {
+    "navigation": {
+      "overview": "Übersicht",
+      "achievements": "Erfolge",
+      "photos": "Fotos",
+      "perceptions": "Wahrnehmungen",
+      "sensors": "Sensoren",
+      "followers": "Abonnenten"
+    },
+    "edit": {
+      "navigation": {
+        "details": "Details",
+        "password": "Passwort",
+        "settings": "Einstellungen",
+        "delete": "Löschen"
+      },
+      "password": {
+        "change_your_password_heading": "Passwort ändern",
+        "current_password": "Aktuelles Passwort",
+        "new_password": "Neues Passwort",
+        "repeat_new_password": "Passwort wiederholen",
+        "change_button": "Ändern"
+      },
+      "settings": {
+        "notification_settings_heading": "Benachrichtigungen",
+        "privacy_settings_heading": "Privatsphäre Einstellungen",
+        "newsletter_settings_heading": "Newsletter"
+      },
+      "achievements": "Erfolge",
+      "sensors": "Sensoren",
+      "delete": {
+        "delete_your_account_heading": "Um dein Konto zu löschen, schreibe bitte das Wort 'hackAIR'",
+        "delete_button": "Löschen",
+        "write_hackair": "Schreibe bitte 'hackAIR'",
+        "word_required": "Du hast noch das Wort 'hackAIR' geschrieben",
+        "word_no_match": "Du hast noch nicht 'hackAIR' geschrieben",
+        "disclaimer": "Dein Konto wird deaktiviert. Dein Konto wird innerhalb von 30 Tagen gelöscht. Falls Du Dein Konto wiederherstellen möchtest, kontaktiere uns einfach."
+      }
+    },
+    "points": "Punkte",
+    "location_placeholder": "Stadt",
+    "level": "Level",
+    "my_profile": "Mein Profil",
+    "secondary_profile": "Mein Zweitprofil",
+    "want_secondary_profile": "Ich möchte ein zweites Profil",
+    "my_communities": "Meine Gruppen",
+    "make_my_profile_public": "Macht mein Profil öffentlich",
+    "accept_newsletters": "Ich möchte einen Newsletter erhalten",
+    "what_does_this_mean": "Was bedeutet das?",
+    "private_info_heading": "Meine Infos",
+    "contributions_heading": "Neueste Beiträge",
+    "photos_per_day": "Fotos des Tages",
+    "heading": "Bearbeite Profil",
+    "personal_info": "Persönliche Daten",
+    "name": "Name",
+    "surname": "Nachname",
+    "location": "Standort",
+    "year_of_birth": "Geburtsjahr",
+    "gender": "Geschlecht",
+    "sensors": {
+      "my_sensors_heading": "Meine Sensoren",
+      "public_sensors_heading": "Sensoren",
+      "add_a_new_sensor": "FÜGE EINEN NEUEN SENSOR HINZU",
+      "delete_sensor_title": "Lösche Sensor",
+      "confirm_delete": "Bist Du sicher, dass du diesen Sensor löschen möchtest?"
+    },
+    "following": "Abonniert",
+    "followers": "Abonnenten",
+    "followers": {
+      "my_followers_heading": "Meine Abonnenten",
+      "public_followers_heading": "Abonnenten",
+      "invite_people": "LEUTE EINLADEN",
+      "follow": "FOLGEN",
+      "unfollow": "NICHT MEHR FOLGEN"
+    },
+    "genders": {
+      "female": "Weiblich",
+      "male": "Männlich",
+      "other": "Andere"
+    },
+    "language": "Sprache",
+
+    "languages": {
+      "english": "English",
+      "german": "German",
+      "norwegian": "Norwegian"
+    },
+    "sensitivities": "Besondere Empfindlichkeiten",
+    "outdoor_activities": "Aktivitäten im Freien",
+    "outdoor_job": "Arbeit im Freien",
+    "age": "Alter",
+    "groups": "Gruppen",
+    "communities": "Gruppen",
+
+    "achievements": {
+      "acquired_badges_heading": "Erhaltene Auszeichnungen",
+      "available_badges_heading": "Verfügbare Auszeichnungen"
+    },
+    "photos": {
+      "my_photos_heading": "Meine Fotos",
+      "public_photos_heading": "Fotos",
+      "public_photos_click": "Du kannst auf ein Foto klicken, um zu sehen, wie die Luftqualität war oder warum das Foto nicht benutzt wurde.",
+      "photos_marked_with_a": "Fotos, markiert mit",
+      "were_used_by_hackAIR": "von hackAIR genutzt.",
+      "come_from_cardboard_sensors": "kommen vom Karton-Sensor.",
+      "loading_please_wait": "Lädt... bitte warte",
+      "Air_quality_is": "Die Luftqualität ist",
+      "very_good": "sehr gut",
+      "good": "gut",
+      "medium": "mittelmäßig",
+      "bad": "schlecht",
+      "perfect": "Perfekt",
+      "the_photo_does_not_contain_usable_sky": "Das Foto enthält keinen für diese App nutzbaren Himmel.",
+      "NOT_AVAILABLE": "nicht verfügbar für Fotos mit nicht nutzbarem Himmel"
+    },
+    "perceptions": {
+      "my_perceptions_heading": "Meine Wahrnehmungen",
+      "public_perceptions_heading": "Wahrnehmungen"
+    }
+  },
+  "map": {
+    "no_city_data_message": "Aktuell unterstützen wir nur Berlin und Oslo",
+    "select_location": "Wähle einen Standort auf der Karte.",
+    "save_location": "Standort speichern",
+    "compare": "Compare",
+    "cancel": "Cancel",
+    "choose_to_compare": "Choose 2 cities to compare them!",
+    "warning": "Please select 2 cities.",
+    "compare_cities": "Compare Cities"
+  },
+  "chart": {
+    "last_week": "Letzte Woche",
+    "last_month": "Letzter Monat",
+    "last_year": "Letztes Jahr"
+  },
+
+  "sensor": {
+    "view": "Zeige Sensor",
+    "new": "Neuen Sensor",
+    "edit": "Bearbeiten",
+    "name": "Sensor Name",
+    "lcoation": "Sensor Standort",
+    "type": "Sensor Typ",
+    "access_key": "Zugangscode",
+    "export_data": "Sensordaten exportieren",
+    "arduino": "Arduino Sensor",
+    "mac_address": "MAC Adresse",
+    "floor": "Stockwerk",
+    "sensor_measurements_heading": "Sensor Messdaten",
+    "FROM": "VON",
+    "TO": "BIS",
+    "GET_MEASUREMENTS": "Messwerte erhalten"
+  },
+  "map_pop_ups": {
+    "Source": "Quelle",
+    "days_ago": "Tage alt",
+    "Pollutant_value": "Messwert"
+  },
+  "air_quality": {
+    "air_quality_is": "Die Luftqualität ist",
+    "bad": "schlecht",
+    "medium": "mittelmäßig",
+    "good": "gut",
+    "very_good": "sehr gut",
+    "excellent": "sehr gut",
+    "history": "Geschichte",
+    "share": "Teilen",
+    "disclaimers": {
+      "disclaimer_measurements": "Dieser Index dient lediglich als ein unterstützender Hinweis auf die Feinstaubbelastung und ist im Entwicklungsstadium. Berichte, Studien und andere wissenschaftliche Arbeiten sollten sich ausschließlich auf anerkannte und offizielle Messmethoden beziehen.",
+      "disclaimer_recommendations": "Diese Empfehlungen stellen keinen medizinischen Rat dar. Bitte nutze Sie ausschliesslich für allgemeine Informationszwecke.",
+      "disclaimer_quality_history": "Dieser aktuelle Index wurde aus allen verfügbaren Datenquellen innerhalb des Stadtzentrums errechnet.",
+      "disclaimer_unsupportedcity": "Derzeit berechnen wir keinen Luftqualitätsindex für diese Stadt. Du kannst aber über die Karte andere Messungen finden oder deine eigenen Messungen hinzufügen!!"
+    },
+    "from": "von",
+    "to": "bis"
+  },
+  "sensors": {
+    "add_new": "Füge einen Sensor hinzu"
+  },
+  "communities": {
+    "navigation": {
+      "map": "Karte",
+      "contributions": "Beiträge",
+      "members": "Mitglieder"
+    },
+    "search_heading": "Suchen",
+    "my_news_feed_heading": "Meine Neuigkeiten",
+    "my_communities_heading": "Meine Gruppen",
+    "you_can_join_this_community": "Du kannst dieser Gruppe beitreten.",
+    "you_can_leave_this_community": "Du kannst diese Gruppe verlassen",
+    "create_new": "Gruppe gründen",
+    "name": "Name",
+    "description": "Beschreibung",
+    "members": "Mitglieder",
+    "join": "Beitreten",
+    "leave": "Verlassen",
+    "export_community_data": "Exportiere Daten der Gruppe.",
+    "community_social_feed": "Neuigkeiten aus der Gruppe",
+    "update": "Update zu Deiner Gruppe",
+    "have_to_join_community": "Du musst der Gruppe beitreten um ihre Aktivitäten sehen zu können.",
+    "new": "Neue Gruppe",
+  "edit": {
+    "navigation": {
+      "edit": "Bearbeiten",
+      "update": "Update",
+      "delete": "Löschen"
+    },
+    "delete": {
+      "delete_your_community_heading": "Bitte schreibe das Wort 'hackAIR', um die Gruppe zu löschen",
+      "delete_button": "Löschen",
+      "write_hackair": "Bitte schreibe das Wort 'hackAIR'",
+      "word_required": "Du hast das Wort 'hackAIR' noch nicht geschrieben",
+      "word_no_match": "Du hast noch nicht 'hackAIR' geschrieben"
+    }
+  }
+  },
+  "social": {
+    "search_heading": "Suchen",
+    "search_placeholder": "Nach Personen oder Gruppen suchen",
+    "my_news_feed_heading": "Mein News Feed",
+    "my_communities_heading": "Meine Gruppen",
+    "create_new_community": "Eine neue Gruppe gründen",
+    "notifications": "Benachrichtigungen"
+  },
+
+  "city_search": {
+    "chooseLocation": "Bitte wähle einen Ort aus der Liste aus"
+  },
+
+  "cancel": "ABBRECHEN",
+  "save": "SPEICHERN",
+  "create": "ERSTELLEN",
+  "update": "Update",
+  "BUTTON_LANG_DE": "Deutsch",
+  "BUTTON_LANG_EN": "English",
+  "BUTTON_LANG_NO": "Norwegian",
+
+  "footerfeed": {
+    "feedback_share": "Teile dein Feedback"
+  },
+  "landingnavigation": {
+    "toggle_navigation": "Toggle Navigation"
+  },
+  "mapby": {
+    "map_tile": "Karte von",
+    "under": "unter",
+    "data_by": "Daten von"
+  },
+  "error": {
+    "page_not_found": "Seite nicht gefunden",
+    "this_page_not_found": "Diese Seite konnte nicht gefunden werden."
+  },
+  "submitperceptions": {
+    "user_not_submit_perceptions": "Dieser Nutzer hat keine Wahrnehmungen übermittelt."
+  },
+  "submitphotos": {
+    "user_not_submit_photos": "Dieser Nutzer hat keine Fotos übermittelt."
+  },
+  "submitsensors": {
+    "user_not_submit_sensors": "Dieser Nutzer hat keine Sensorendaten übermittelt."
+  },
+  "locationsensor": {
+    "location_detail": "Standort Details"
+  },
+  "viewsensor": {
+    "export_measurements": "MESSDATEN EXPORTIEREN"
+  },
+  "hackair": {
+    "hackair_home": "hackAIR zu Hause",
+    "hackair_mobile": "hackAIR Mobil"
+  },
+  "dtlprofile": {
+    "username": "Nutzername",
+    "receive_daily_info_aq": "Ich will jeden Tag E-Mails mit Informationen über die aktuelle Feinstaubbelastung erhalten."
+  },
+  "setprofile": {
+    "receive_personal_recommendation": "Wenn du personalisierte Empfehlungen erhalten möchtest, fülle bitte die folgenden Felder aus. Die Tipps findest du auf der Hauptseite."
+  },
+  "uploadphoto": {
+    "image": "Bild",
+    "browse": "Browsen",
+    "upload": "Hochladen",
+    "cancel": "Löschen"
+  },
+  "community": {
+    "no_results": "Keine Resultate gefunden"
+  },
+  "testmission_0": {
+    "complete_profile": "Vervollständige dein Profil",
+    "increase_strength_profile": "Ergänze dein Profil.",
+    "msg_set_account": "Lass uns deinen Account anlegen. Als Hacker*in brauchst du eine Basis, von der aus du arbeitest. Das ist dein Profil, mit dem du dir alle wichtigen Daten ansehen kannst. Lass uns dein Profil anlegen!"
+  },
+  "testmission_1": {
+    "public_trans": "Bewusstsein für Öffentliche Verkehrsmittel",
+    "prove_envi_sensi": "Prüfe deine Umweltsensibilitäten",
+    "public_trans_m": "Öffentliche Verkehrmittel Bewusstseinsmission",
+    "msg_prove_envi_sensi": "Prüfe deine Umweltsensibilitäten, indem du drei verschiedene Öffentliche Verkehrsmittel in einer Woche benutzt."
+  },
+  "testmission_2": {
+    "cycling_city": "Fahrrad fahren in der Stadt",
+    "msg_cycling_city": "Prüfe deine Umweltsensibilitäten, indem du Fahrrad in der Stadt fährst."
+  },
+  "testmission_3": {
+    "walk_mile": "Laufe einen Kilometer",
+    "improve_health": "Verbessere deine Gesundheit durch Laufen.",
+    "msg_walking": "Prüfe deine Umweltsensibilitäten, indem du läufts."
+  },
+  "testmission_4": {
+    "run_lola": "Lola rennt",
+    "some_exercise": "Mache ein paar Übungen!",
+    "msg_running": "Prüfe deine Umweltsensibilitäten, indem du läufst."
+  },
+  "filters": {
+    "filter_map": "Durchgehende Karte",
+    "filter_map_desc": "Feinstaub-Schätzwerte sind auf Basis von offiziellen Messstationen, hackAIR Sensoren und Satellitendaten für Deutschland und Norwegen kalkuliert.",
+    "filter_cardboard": "hackAIR Getränkekarton",
+    "filter_cardboard_desc": "Feinstaub-Schätzwerte auf Basis von hackAIR Getränkekarton Sensoren",
+    "filter_sensors_luftdaten": "DIY Sensoren - Luftdaten",
+    "filter_sensors_luftdaten_desc": "Messungen von der Luftdaten-Gemeinschaft",
+    "filter_sensors_hackair": "DIY Sensoren - hackAIR",
+    "filter_sensors_hackair_desc": "Messungen von hackAIR zu Hause & hackAIR Mobil Sensoren",
+    "filter_sky_photos": "Himmel-Fotos",
+    "filter_sky_photos_desc": "Feinstaub-Schätzwerte auf Basis von Himmel-Fotos",
+    "filter_stations": "Offizielle Stationen",
+    "filter_stations_desc": "Messungen von offiziellen Kontrollstationen",
+    "filter_perceptions": "Wahrnehmungen",
+    "filter_perceptions_desc": "Subjektive Wahrnehmung der Luftqualität übermittelt durch die hackAIR App",
+    "filter_my_sensors": "Meine Sensoren",
+    "filter_my_sensors_desc": "Messungen deiner eigenen hackAIR Sensoren",
+    "filter_my_photos": "Meine Fotos",
+    "filter_my_photos_desc": "Feinstaub-Schätzwerte von deinen eigenen Himmel-Fotos",
+    "fusion": "Fusion",
+    "luftdaten": "Luftdaten",
+    "cots": "Sensoren zum selber basteln",
+    "sensors": "Sensoren",
+    "photos": "Fotos",
+    "open_data": "Offene Daten",
+    "perceptions": "Wahrnehmungen",
+    "my_sensors": "Meine Sensoren",
+    "my_photos": "Meine Fotos"
+  },
+
+  "msg_notification_c": "Tipp! Du kannst die Luftqualität verbessern, wenn du Öffentliche Verkehrsmittel benutzt.",
+
+  "authcontrol": {
+    "welcome": "Willkommen",
+    "welcome_back": "Willkommen zurück,",
+    "success_logout": "Erfolgreich abgemeldet",
+    "reset_link": "Der Link zum Zurücksetzen wurde gesendet an ",
+    "pass_changed": "Passwort geändert."
+  },
+  "profilecontrol": {
+    "profile_saved": "Dein Profil wurde gespeichert",
+    "notification_saved": "Deine Benachrichtigungseinstellungen wurden gespeichert",
+    "newsletter_saved": "Deine Newsletter Einstellungen wurden gespeichert",
+    "privacy_saved": "Deine Privateinstellungen wurden gespeichert",
+    "pass_updated": "Dein Passwort wurde aktualisiert",
+    "some_wrong": "Hoppala, da ist etwas schief gelaufen",
+    "success_deleted": "Dein Account wurde erfolgreich gelöscht"
+  },
+
+  "hom": {
+    "search_place_address": "Suche nach Ort oder Adresse..."
+  },
+
+  "search_place": "Suche nach einem Ort...",
+  "type_city_address": "Gib bitte deine Stadt oder Adresse ein...",
+
+  "cities": {
+    "athens": "Athen",
+    "berlin": "Berlin",
+    "brussels": "Brüssel",
+    "london": "London",
+    "oslo": "Oslo",
+    "thessaloniki": "Thessaloniki"
+  },
+
+  "primary_profile": "Erstprofil",
+
+  "select_city": "Wähle eine Stadt aus",
+
+  "time": "Zeit",
+  "pollutant": "Schadstoff",
+  "value": "Wert",
+  "meter": "Meter",
+
+  "indoor": "Innenluft",
+  "building_entrance": "Gebäudeeingang",
+  "garden": "Garten",
+  "terrace": "Terrasse",
+  "balcony": "Balkon",
+  "street": "Straße",
+  "other_outdoor": "Anderer Ort draußen",
+  "none": "Nichts",
+  "hackair_home": "hackAIR Zuhause",
+  "hackair_mobile": "hackAIR mobile",
+  "arduino": "Arduino",
+  "bleair": "bleair",
+
+  "only_measurement": "*Es können nur 5000 Messungen (Daten ca. 1 Woche) exportiert werden.",
+
+  "no_location": "Kein Standort",
+  "map_filter":"Kartenfilter"
+
+}

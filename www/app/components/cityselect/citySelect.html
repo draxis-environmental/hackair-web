@@ -1,0 +1,8 @@
+<div class="map-cities">
+  <h4 ng-click="vm.openList()">{{vm.selectedCity.name || 'select_city' | translate }}
+    <i class="glyphicon glyphicon-chevron-down"></i>
+  </h4>
+  <ul class="select">
+    <li class="city" ng-repeat="city in vm.cities" ng-click="vm.selectCity(city)">{{::city.name}}</li>
+  </ul>
+</div>

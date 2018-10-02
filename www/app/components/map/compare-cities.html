@@ -1,0 +1,39 @@
+<div class="modal-header">
+  <h4 class="compare-header text-center">{{ 'map.choose_to_compare' | translate }}</h4>
+  <p class="text-center warning" ng-if="!vm.bothSelected">{{ 'map.warning' | translate }}</p>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-sm-6 compare-cities">
+      <div uib-dropdown class="city1">
+        <h4 id="btn-append-to-single-button" type="button" uib-dropdown-toggle>
+          {{ vm.selectedCity1.name || 'comparecities.select_city' | translate }} <i class="glyphicon glyphicon-chevron-down"></i>
+        </h4>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+          <li role="menuitem" ng-repeat="city in vm.cities" ng-click="vm.selectCity1(city)"><a href="#">{{city.name}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6 compare-cities" style="padding-right: 20px;">
+      <div uib-dropdown class="city2">
+        <h4 id="btn-append-to-single-button" type="button" uib-dropdown-toggle>
+          {{ vm.selectedCity2.name || 'Select city' }} <i class="glyphicon glyphicon-chevron-down"></i>
+        </h4>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+          <li role="menuitem" ng-repeat="city in vm.cities" ng-click="vm.selectCity2(city)"><a href="#">{{city.name}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <div class="row">
+    <div class="col-sm-6 text-center">
+      <button class="btn btn-calm button-save" ng-click="vm.ok()">{{ 'map.compare' | translate }}</button>
+    </div>
+    <div class="col-sm-6 text-center">
+      <button class="btn btn-assertive button-cancel" ng-click="vm.cancel()">{{ 'map.cancel' | translate }}</button>
+    </div>
+  </div>
+</div>
+

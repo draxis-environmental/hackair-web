@@ -1,0 +1,111 @@
+<section class="social">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="search item">
+            <h3>{{'social.search_heading' | translate}}</h3>
+            <input type="text" placeholder="{{'social.search_placeholder' | translate}}"  ng-model="vm.asyncSelected" uib-typeahead="person.name for person in vm.search($viewValue)"
+                   typeahead-loading="loadingResults" typeahead-no-results="noResults" typeahead-on-select="onSelect($item)">
+            <i ng-show="loadingResults" class="glyphicon glyphicon-refresh"></i>
+            <div ng-show="noResults">
+              <i class="glyphicon glyphicon-remove"></i> {{ 'community.no_results' | translate }}
+            </div>
+          </div>
+          <hr>
+          <div class="news-feed item">
+            <h3>{{'social.my_news_feed_heading' | translate}}</h3>
+          </div>
+          <hr>
+          <div class="my-communities">
+            <h3>{{'social.my_communities_heading' | translate}}</h3>
+            <ul class="list-group">
+              <li ng-repeat="community in vm.communities" style="padding: 10px 0px;">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <img ng-src="{{community.profile_picture || 'img/u_i_community_avatar_empty.svg'}}" />
+                  </div>
+                  <div class="col-xs-7">
+                    <h2><a ui-sref="community({id:'{{community.id}}'})">{{ community.name }}</a></h2>
+                  </div>
+                  <div class="col-xs-3">
+                    <button class="button button-calm pull-right" ng-if="vm.amCommunityOwner(community.owner_id)" ui-sref="edit-community.update({id:'{{community.id}}'})">{{'communities.edit.navigation.edit' | translate}}</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="new-community item">
+            <a class="text-center" ui-sref="new-community">
+              <img src="/img/icons/icon_small_create.svg">
+              {{ 'social.create_new_community' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 col-lg-5 news-feed">
+        <div class="card text-center community-view">
+          <img class="community-avatar" src="{{vm.selectedCommunity.profile_picture || 'img/ui/u_i_avatar_empty_rounded.svg'}}">
+          <h2>{{vm.selectedCommunity.name}}</h2>
+          <h4><img src="/img/ui/icon_small_members_inactive.svg">{{vm.selectedCommunity.num_of_members}} {{'communities.members' | translate}}</h4>
+
+          <div class="join-community">
+            <p ng-if="!vm.selectedCommunity.joined_member">{{'communities.you_can_join_this_community' | translate}}
+              <button class="button button-calm" ng-click="vm.joinCommunity(vm.selectedCommunity.id)">{{'communities.join' | translate}}</button>
+            </p>
+            <p ng-if="vm.selectedCommunity.joined_member">{{'communities.you_can_leave_this_community' | translate}}
+              <button class="button button-assertive" ng-click="vm.leaveCommunity(vm.selectedCommunity.id)">{{'communities.leave' | translate}}</button>
+            </p>
+          </div>
+
+          <div class="description">
+            <p>{{vm.selectedCommunity.description}}</p>
+          </div>
+          <div class="export">
+            <a href="">
+              <h5><img src="/img/ui/icon_small_export.svg">{{'communities.export_community_data' | translate}}</h5>
+            </a>
+          </div>
+        </div>
+        <div class="card text-center" ng-repeat="feed_item in vm.communityFeed | limitTo:10" ng-if="vm.selectedCommunity.joined_member">
+          <div>
+            <p>
+              <img class="avatar img-circle" ng-src="{{feed_item.profile_picture || 'img/u_i_avatar_empty.svg'}}" />
+              <span class="name">{{ feed_item.name }}</span> {{ feed_item.action }}
+              <h6>{{feed_item.postDate}}</h6>
+            </p>
+          </div>
+          <img class="photo img-responsive" ng-if="feed_item.object_metadata != undefined" ng-src="{{feed_item.object_metadata.sky_photo_thumb}}">
+          <!--
+            <img src="/img/ui/icon_like_inactive.svg"> <a href="#">Like</a>
+          -->
+        </div>
+        <!--
+        <div class="card">
+          <ui-view></ui-view>
+        </div>
+        -->
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="card">
+          <div class="social-feed">
+            <h3>{{'communities.community_social_feed' | translate}}</h3>
+            <hr>
+            <ul class="list-group" ng-if="vm.selectedCommunity.joined_member && vm.communityFeed">
+              <li ng-repeat="feed in vm.communityFeed | limitTo:5">
+                <img class="avatar" ng-src="{{feed.profile_picture || 'img/u_i_avatar_empty.svg'}}" />
+                <div class="feed-text" ng-class="{'has-image': feed.object_metadata != undefined}">
+                  <p><span class="name">{{feed.name}}</span> {{feed.action}}</p>
+                  <h6><img src="/img/ui/icon_like_inactive.svg">{{feed.postDate}}</h6>
+                  <img class="photo img-responsive" ng-if="feed_item.object_metadata != undefined" ng-src="{{feed_item.object_metadata.sky_photo_thumb}}">
+                </div>
+              </li>
+            </ul>
+            <p ng-if="!vm.selectedCommunity.joined_member">{{'communities.have_to_join_community' | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer-section></footer-section>
