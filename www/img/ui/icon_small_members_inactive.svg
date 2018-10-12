@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>DBE23A5A-F1E6-4D26-80A3-AB0F2EEC242E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M0.238983142,0 L9.33333333,0 L9.33333333,9.26470588 L0.602281469,9.26470588 L2.94265818,9.26470588 C4.53579537,9.26470588 5.83333333,7.98584087 5.83333333,6.4119395 L5.83333333,3.56756675 C5.83333333,1.59177602 4.21662352,0 2.21606152,0 L0.238983142,0 Z" id="path-1"></path>
+        <path d="M3.38465895,10.2941176 L11.3666667,10.2941176 L11.3666667,0 L0,0 L0,1.0052709 C0.0802889961,1.00176949 0.161042647,1 0.242222222,1 C3.171786,1 5.54666667,3.30441673 5.54666667,6.14705882 C5.54666667,7.84845202 4.69590716,9.35703538 3.38465895,10.2941176 Z" id="path-3"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Icon_Small_Members_Inactive">
+            <g id="Group-4" transform="translate(3.500000, 1.000000)">
+                <g id="Group-3" transform="translate(6.166667, 8.235294)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Combined-Shape"></g>
+                    <path d="M-1,3.56756675 C-1,2.77804383 -0.363016129,2.13800905 0.423053231,2.13800905 L6.43408963,2.13800905 C7.22002022,2.13800905 7.85714286,2.7698298 7.85714286,3.56756675 L7.85714286,6.4119395 C7.85714286,6.80668908 7.54191245,7.12669683 7.14729782,7.12669683 L-0.290154964,7.12669683 C-0.682191552,7.12669683 -1,6.79937509 -1,6.4119395 L-1,3.56756675 Z" id="Rectangle-Copy" stroke="#00A3AC" mask="url(#mask-2)"></path>
+                </g>
+                <ellipse id="Oval-7" stroke="#00A3AC" cx="4.5" cy="5.99240987" rx="2.5" ry="2.49240987"></ellipse>
+                <path d="M0,11.919425 C0,11.1354982 0.640757233,10.5 1.43275619,10.5 L8.56724381,10.5 C9.35853321,10.5 10,11.1332535 10,11.919425 L10,14.7836219 C10,15.1792666 9.68975425,15.5 9.28082466,15.5 L0.719175339,15.5 C0.321985767,15.5 0,15.171936 0,14.7836219 L0,11.919425 Z" id="Rectangle" stroke="#00A3AC"></path>
+                <g id="Group-2" transform="translate(4.133333, 0.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Combined-Shape"></g>
+                    <ellipse id="Oval-7-Copy" stroke="#00A3AC" mask="url(#mask-4)" cx="5.12257778" cy="5.97058824" rx="2.59146667" ry="2.52941176"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

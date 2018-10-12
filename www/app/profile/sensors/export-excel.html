@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+
+
+		<div class="">
+		  <h4>{{'sensor.sensor_measurements_heading' | translate}}</h4>
+		</div>
+
+		<br>
+
+		<div class="">
+		  <b>{{'sensor.FROM' | translate}}</b>: <span style="background-color: #ff5958; color: white; padding: 4px;">{{dateFrom | date:'yyyy-MM-dd'}}</span>
+		  <datetimepicker data-ng-model="dateFrom" data-datetimepicker-config="{ startView:'day', minView:'day' }" />
+		</div>
+
+		<div class="">
+		  <b>{{'sensor.TO' | translate}}</b>: <span style="background-color: #ff5958; color: white; padding: 4px;">{{dateTo | date:'yyyy-MM-dd'}}</span>
+		  <datetimepicker data-ng-model="dateTo" data-datetimepicker-config="{ startView:'day', minView:'day' }" />
+		</div>
+
+		<br>
+
+		<button style="margin-bottom:20px; font-size:14px; color: #737373; background-color: white;" class="btn button-follows-b" ng-click="validateTimeDifference()">{{'sensor.GET_MEASUREMENTS' | translate}}</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>

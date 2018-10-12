@@ -1,0 +1,42 @@
+<container-fluid>
+  <section class="user-action">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+        <div class="panel" ng-model="status">
+          <form name="unsubscribeForm" class="unsubscribeForm" ng-show="subStatus=='unsubscribe'">
+            <h3>{{'auth.unsubscribe.heading' | translate}}</h3>
+            <p>{{'auth.unsubscribe.enter_email_to_unsubscribe' | translate}}</p>
+            <div class="auth-input">
+              <button class="btn btn-primary" ng-click="vm.unsubscribe()">{{'auth.unsubscribe.unsubscribe' | translate}}</button>
+            </div>
+          </form>
+
+          <div ng-show="subStatus=='true'">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8">
+                <h3>{{'auth.unsubscribe.unsubscribed' | translate}}</h3>
+                <p>{{'auth.unsubscribe.ubsubscribed_successfully' | translate}}</p>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <img src="../../img/icons/fusion_active.svg">
+              </div>
+            </div>
+          </div>
+          <div ng-show="subStatus=='false'">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8">
+                <h3>{{'auth.unsubscribe.something_went_wrong' | translate}}</h3>
+                <p>{{'auth.unsubscribe.try_again' | translate}}</p>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <img src="../../img/icons/fusion_inactive.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer-section></footer-section>
+</container-fluid>

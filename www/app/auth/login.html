@@ -1,0 +1,80 @@
+<div ng-init="flag=false">
+  <form class="login-form form" name="loginForm" ng-hide="flag==true">
+    <section class="login-section">
+      <div class="login">
+        <h3>{{'auth.login_view.heading' | translate}}</h3>
+        <div class="auth-input">
+          <div class="auth-input-icon">
+            <img src="img/icon_email.svg" />
+          </div>
+          <input type="email" name="email" ng-model="vm.user.email" minlength="5" required>
+          <span class="auth-input-label" ng-hide="loginForm.email.$touched && loginForm.email.$invalid" ng-show="loginForm.email.$valid && loginForm.email.$touched" aria-label="Email">{{ 'auth.email' | translate }}</span>
+        </div>
+        <div class="input-error" ng-messages="loginForm.email.$touched && loginForm.email.$error" role="alert">
+          <div ng-message="required">{{'auth.email_required' | translate}}</div>
+          <div ng-message="minlength">{{'auth.email_min_length' | translate}}</div>
+          <div ng-message="maxlength">{{'auth.email_max_length' | translate}}</div>
+          <div ng-message="email">{{'auth.email_invalid' | translate}}</div>
+        </div>
+
+        <div class="auth-input">
+          <div class="auth-input-icon">
+            <img src="img/icon_password.svg" />
+          </div>
+          <input type="password" name="password" minlength="4" ng-model="vm.user.password" required>
+          <span class="auth-input-label" ng-hide="loginForm.password.$touched && loginForm.password.$invalid" ng-show="loginForm.password.$valid && loginForm.password.$touched" aria-label="Password">{{ 'auth.password' | translate }}</span>
+        </div>
+        <div class="input-error" ng-messages="loginForm.password.$touched && loginForm.password.$error" role="alert">
+          <div ng-message="required">{{'auth.password_required' | translate}}</div>
+          <div ng-message="minlength">{{'auth.password_min_length' | translate}}</div>
+          <div ng-message="maxlength">{{'auth.password_max_length' | translate}}</div>
+        </div>
+
+        <div class="auth-actions">
+          <small><a ng-click="flag=true" href="#" class="assertive">{{ 'auth.forgot_password' | translate }}</a></small>
+          <button class="btn btn-primary" ng-click="vm.login()">{{ 'auth.login' | translate }}</button>
+        </div>
+      </div>
+      <div class="social-login">
+        <h2>{{'auth.login_view.via_social_network' | translate}}</h2>
+        <button class="btn btn-facebook btn-sm">Facebook</button>
+        <button class="btn btn-twitter btn-sm">Twitter</button>
+      </div>
+
+      <div>
+        <h4 class="text-center">{{'auth.login_view.new_to_hackair' | translate}} <a data-toggle="dropdown" href="/register"><u>{{'auth.login_view.register_here' | translate}}</u></a></h4>
+      </div>
+    </section>
+  </form>
+
+  <form class="forgot-form form" name="forgotForm" ng-hide="flag==false">
+    <section class="forgot-section forgot">
+      <div>
+        <img ng-click="flag=false" src="img/icon_back_pastel_red.svg">
+      </div>
+
+      <div class="text-center">
+        <img style="width:230px;" src="img/illustration_forgot_pass.png">
+      </div>
+
+      <h3>{{'auth.login_view.forgot_password' | translate}}</h3>
+      <p>{{'auth.login_view.forgot_password_text' | translate}}</p>
+      <div class="auth-input">
+        <div class="auth-input-icon">
+          <a href="#"><img src="img/icon_email.svg" /></a>
+        </div>
+        <input type="email" name="email" ng-model="vm.user.email" minlength="5" required>
+        <span class="auth-input-label" ng-hide="forgotForm.email.$touched && forgotForm.email.$invalid" ng-show="forgotForm.email.$valid && forgotForm.email.$touched" aria-label="Email">{{ 'auth.email' | translate }}</span>
+      </div>
+      <div class="input-error" ng-messages="forgotForm.email.$touched && forgotForm.email.$error" role="alert">
+        <div ng-message="required">{{'auth.email_required' | translate}}</div>
+        <div ng-message="minlength">{{'auth.email_min_length' | translate}}</div>
+        <div ng-message="maxlength">{{'auth.email_max_length' | translate}}</div>
+        <div ng-message="email">{{'auth.email_invalid' | translate}}</div>
+      </div>
+      <div class="text-right">
+        <button class="btn btn-primary" ng-click="vm.sendReset()">{{ 'auth.reset' | translate }}</button>
+      </div>
+    </section>
+  </form>
+</div>

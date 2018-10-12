@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Icon_Small_Sensor_Inactive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.99995945,14 L10.9975267,14 C11.544239,14 12,13.5492199 12,12.9931545 L12,12 C10.8954305,12 10,11.1045695 10,10 C10,8.8954305 10.8954305,8 12,8 L12,1.00684547 C12,0.449948758 11.5511774,0 10.9975267,0 L1.00247329,0 C0.455760956,0 0,0.450780073 0,1.00684547 L0,8 C1.1045695,8 2,8.8954305 2,10 C2,11.1045695 1.1045695,12 0,12 L0,12.9931545 C0,13.5500512 0.448822582,14 1.00247329,14 L3.00004249,14 C3.00506105,13.4468553 3.45400247,13 3.99077797,13 L8.00922203,13 C8.55339085,13 8.99509601,13.4384685 8.99995945,14 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="14" height="16">
+            <rect x="-1" y="-1" width="14" height="16" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <circle id="path-3" cx="6" cy="4" r="2"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="6" height="6">
+            <rect x="3" y="1" width="6" height="6" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Icon_Small_Sensor_Inactive" stroke="#00A3AC" stroke-width="2">
+            <g id="Group-3" transform="translate(4.000000, 3.000000)">
+                <use id="Combined-Shape" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                <use id="Oval-2" mask="url(#mask-4)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

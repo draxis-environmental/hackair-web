@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Icon_Small_Photos_Inactive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.65449318,5.00805664 L2.74060059,5.00805664 C2.34172684,5.00805664 2.01812954,5.32361762 2.01812954,5.71288181 L2,15.2951748 C2,15.6841251 2.3234613,16 2.72247104,16 L17.277529,16 C17.6764027,16 18,15.684439 18,15.2951748 L18.0181295,5.71288181 C18.0181295,5.32393153 17.6946682,5.00805664 17.2956585,5.00805664 L10.0181295,5.00805664 L10.0181295,4.30878763 C10.0181295,3.90924712 9.69552125,3.59629193 9.29756375,3.59629193 L6.37505898,3.59629193 C5.98247513,3.59629193 5.65449318,3.91528712 5.65449318,4.30878763 L5.65449318,5.00805664 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16.0181295" height="12.4037081" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <ellipse id="path-3" cx="9.5" cy="10.5" rx="3.5" ry="3.5"></ellipse>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7" height="7" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Icon_Small_Photos_Inactive" stroke="#00A3AC" stroke-width="2">
+            <use id="Combined-Shape" mask="url(#mask-2)" xlink:href="#path-1"></use>
+            <use id="Path" mask="url(#mask-4)" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

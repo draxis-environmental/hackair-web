@@ -1,0 +1,449 @@
+@import '../../../scss/base.scss';
+
+ui-view.main.ng-enter, ui-view.main.ng-leave {
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+ui-view.main.ng-enter {
+  opacity: 0;
+  position:absolute; left:0px; right:0px;
+}
+
+ui-view.main.ng-enter-active {
+  opacity: 1;
+}
+
+ui-view.main.ng-leave {
+  opacity: 1;
+  position:absolute; left:0px; right:0px;
+}
+
+ui-view.main.ng-leave-active {
+  opacity: 0;
+}
+
+.main {
+    & .row {
+        margin:0;
+    }
+}
+
+.gradient-background{
+    background: #71c9ce; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#71c9ce, #deeced); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#71c9ce, #deeced); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#71c9ce, #deeced); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#71c9ce, #deeced); /* Standard syntax */
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    color: #13939c;
+
+    & p {
+        line-height: 24px;
+        font-family: 'noto_sansregular';
+        size: 16px;
+        letter-spacing: -0.17px;
+        color: #13939c;
+    }
+
+    & h4 {
+        font-family: 'noto_sansbold';
+        font-weight: bold;
+        letter-spacing: -0.25px;
+        size: 24px;
+        color: #13939c;
+    }
+
+    & a {
+        color: white;
+        font-family: 'noto_sansbold';
+        size: 16px;
+        letter-spacing: 0.56px;
+        text-align: center;
+    }
+
+    & button {
+        margin-bottom: 20px;
+    }
+
+
+    .perfect-about {
+        height: 230px;
+        img {
+            width: 242px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 99;
+        }
+    }
+
+    @media (max-width: 768px) {
+            .perfect-about {
+                text-align: center;
+                img {
+                    width: 190px;
+                    text-align: center;
+                }
+                height: auto;
+        }
+    }
+}
+
+.call-to-action {
+    background-image: url('/img/Bg_CallToAction.png');
+    background: url('/img/Bg_CallToAction.png'), #71c9ce;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top;
+
+
+     & h1 {
+        font-family: 'Bariol Bold';
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 6.55px;
+        color: #00929a;
+        margin: 40px auto 10px auto;
+    }
+
+    & h5 {
+        font-family: 'noto_sansbold';
+        font-size: 18px;
+        text-align: center;
+        color: $teal-blue;
+        margin: 0px auto 60px;
+    }
+
+
+}
+
+
+
+.map-row {
+    padding-top: 100px;
+    background-image: url('/img/map.png');
+
+    .quality {
+        width: 75%;
+        background-color: white;
+        margin: 0 auto -60px auto;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+
+        & h4 {
+            font-family: 'noto_sansbold';
+            font-weight: bold;
+            letter-spacing: -0.25px;
+            size: 24px;
+            color: #13939c;
+            text-align: center;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        & p {
+            line-height: 24px;
+            font-family: 'noto_sansregular';
+            size: 16px;
+            letter-spacing: -0.17px;
+            color: #13939c;
+        }
+
+        p {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* styling used in about & how it works */
+.get-involved {
+    margin: 50px auto 0 auto;
+    text-align: center;
+
+    & p {
+        font-family: 'noto_sansregular';
+        size: 14px;
+        color: $teal-blue;
+        max-width: 300px;
+        margin: 0 auto 20px auto;
+
+    }
+
+    & h5 {
+        font-family: 'Bariol Bold';
+        font-size: 22px;
+        text-align: center;
+        color: $teal-blue;
+    }
+
+}
+.azureish-background{
+    background-color:$azureish-white;
+}
+
+.ribbon-banner {
+
+    background-image: url('/img/Ribbon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 100px;
+
+    h3 {
+        font-family: 'Bariol Bold';
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 3px;
+        color: $azureish-white;
+        margin: 5px auto;
+
+    }
+
+    @media (max-width: 768px) {
+      background-color: $teal-blue;
+    }
+
+}
+
+/* styling used in about & how it works */
+.download-section {
+    background-color: $assertive;
+
+    & h5 {
+        color: $azureish-white;
+        font-family: 'noto_sansbold';
+        font-weight: bold;
+        letter-spacing: -0.25px;
+        size: 24px;
+        margin: 60px 0px 10px 0px;
+
+    }
+
+    & p {
+        font-family: 'noto_sansregular';
+        color: $azureish-white;
+
+        size: 16px;
+    }
+
+    .store-icon {
+        max-width: 100%;
+        margin: 0px auto;
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+    }
+
+    #phone-mockup {
+        margin: -46px 20px 0 0px;
+        bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        #phone-mockup {
+            margin: 10px auto 0 auto;
+            bottom: 0;
+        }
+    }
+}
+
+/* links, social networks, partners and eu commision section */
+/* styling used in about & how it works */
+.cyan-background {
+    background-color: #00929a;
+    color: white;
+
+    img {
+        margin: 20px auto 10px auto;
+    }
+
+        a:link {
+
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: white;
+        }
+
+        & h5 {
+            font-family: 'Bariol Bold';
+            font-size: 18px;
+            color: white;
+        }
+
+        ul > li {
+             font-family: 'noto_sansregular';
+             font-size: 12px;
+        }
+
+        hr {
+        background-color: #00929a;
+        margin: 0;
+        color: white;
+        opacity: 0.5;
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+    }
+    /* text next to the eu commision logo */
+    .eu-text p {
+        font-family: 'noto_sansregular';
+        font-size: 10px;
+        opacity: 0.5;
+        margin-top: 4em;
+        border-right: solid 2px;
+        padding-right: 2em;
+    }
+}
+
+/* partners and eu commision section */
+/* styling used in about & how it works */
+.logos-space {
+    padding-bottom: 30px;
+
+    h5 {
+         opacity: 0.5;
+         text-align: center;
+    }
+
+    & a:hover img{
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+}
+
+/* styling used in about & how it works */
+footer {
+    background-color: #005d69;
+
+    h6 {
+        text-align: center;
+        color: $teal-blue;
+        font-size: 12px;
+    }
+}
+
+/* styling for how it works page*/
+/* web app and smartphone showcase section */
+section#showcase {
+    background-color: #00929a;
+    min-height: 360px;
+
+    section#content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    header {
+        & h3 {
+            font-family: 'Bariol Bold';
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $azureish-white;
+            margin: 30px auto;
+        }
+        background-color: $teal-blue;
+    }
+
+    & h1 {
+        font-family: 'Bariol Bold';
+        font-size: 72px;
+        text-align: center;
+        color: $azureish-white;
+    }
+
+    & h5 {
+        font-family: 'Bariol Bold';
+        font-size: 22px;
+        color: $azureish-white;
+        margin-left: 10px;
+
+    }
+
+    & h1 {
+        color: $azureish-white;
+        opacity: 0.5;
+        vertical-align: center;
+        margin-bottom: 29px;
+
+
+    }
+
+    & p {
+        font-family: 'noto_sansregular';
+        font-size: 14px;
+        color: $azureish-white;
+        margin-left: 10px;
+    }
+
+    & img {
+        margin: 1em auto;
+    }
+
+    @media (max-width: 768px) {
+        & p {
+            text-align: right;
+        }
+
+        & h5 {
+            text-align: right;
+        }
+    }
+}
+
+section#data-sources {
+    background-color: $azureish-white;
+
+    & h2 {
+        font-family: 'Bariol Bold';
+        font-size: 36px;
+        color: $teal-blue;
+        text-align: center;
+
+    }
+
+    & h4 {
+        font-family: 'Bariol Bold';
+        font-size: 24px;
+        color: $assertive;
+        text-align: center;
+
+    }
+}
+
+

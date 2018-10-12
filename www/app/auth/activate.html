@@ -1,0 +1,18 @@
+<container-fluid>
+  <section class="user-action">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+        <div class="panel" ng-model="confirmed">
+          <form name="activateForm" class="activateForm" ng-show="confirmed=='confirm'">
+            <h3>{{'auth.activate.heading' | translate}}</h3>
+            <p>{{'auth.activate.click_to_activate' | translate}}</p>
+            <div class="auth-input">
+              <button class="btn btn-primary" ng-click="vm.activation()">{{'auth.activate.activate' | translate}}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer-section></footer-section>
+</container-fluid>

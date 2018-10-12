@@ -1,0 +1,13 @@
+<div class="city-search-autocomplete">
+    <img src="img/icons/icon_pin_pastel_red.svg" height="24px" ng-if="intro"/>
+    <input type="text" autocomplete="off" ng-model="searchQuery" ng-blur="loseFocus()">
+    <img src="img/icons/icon_search_blue_munsell.svg" height="24px" ng-if="intro"/>
+    <div class="city-search-autocomplete-dropdown" ng-if="dropDownActive">
+        <div class="blink_me" style="">{{ 'city_search.chooseLocation' | translate }}</div>
+        <ul class="list">
+            <li ng-repeat="location in locations" ng-click="selectLocation(location);" class="city-search-result">
+                {{location.description}}
+            </li>
+        </ul>
+    </div>
+</div>

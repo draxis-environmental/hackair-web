@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>1E0506CD-654A-410C-85B2-09206D9F4CE5</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Icon_Tab_PerceptionNew_Inactive">
+            <polygon id="Rectangle-7" stroke="#FFFFFF" stroke-width="2" points="5 5 19 5 19 9 19 19 5 19"></polygon>
+            <rect id="Rectangle-8" fill="#FFFFFF" x="11.5" y="5" width="1" height="14"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="5" y="11.5" width="13" height="1"></rect>
+            <path d="M2.49446165,19 C2.22142049,19 2.16136992,19.161293 2.35599708,19.3559202 L5.00007689,22 L19.0000769,22 L21.6441567,19.3559202 C21.840726,19.1593509 21.7754675,19 21.5056921,19 L2.49446165,19 Z" id="Path-9" stroke="#FFFFFF" stroke-width="2" transform="translate(12.000038, 20.500000) rotate(-180.000000) translate(-12.000038, -20.500000) "></path>
+            <path d="M2.49438477,2 C2.2213436,2 2.16129303,2.16129303 2.3559202,2.3559202 L5,5 L19,5 L21.6440798,2.3559202 C21.8406491,2.1593509 21.7753906,2 21.5056152,2 L2.49438477,2 Z" id="Path-9" stroke="#FFFFFF" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

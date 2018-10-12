@@ -1,0 +1,49 @@
+<!-- Nav tabs -->
+
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a ui-sref="public.overview" aria-controls="overview" role="tab">{{'profile.navigation.overview' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.achievements" aria-controls="achievements" role="tab">{{'profile.navigation.achievements' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.photos" aria-controls="photos" role="tab">{{'profile.navigation.photos' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.perceptions" aria-controls="perceptions" role="tab">{{'profile.navigation.perceptions' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.sensors" aria-controls="sensors" role="tab">{{'profile.navigation.sensors' | translate}}</a></li>
+    <li role="presentation" class="active"><a ui-sref="public.followers" aria-controls="followers" role="tab">{{'profile.navigation.followers' | translate}}</a></li>
+</ul>
+<div class="tab-content">
+    <!-- Follows -->
+    <div role="tabpanel" class="tab-pane active" id="followers">
+        <!-- my followers section -->
+      <div class="content">
+        <h3>{{ vm.profile.name || '@' + vm.profile.username }}'s {{'profile.followers.public_followers_heading' | translate}}</h3>
+
+        <div class="row">
+
+        <!-- for each follower -->
+
+          <div class="col-xs-12 col-sm-6" ng-repeat="follower in vm.followMap.followers">
+            <div class="row" ng-if="vm.user.id !== follower.id">
+                <div class="col-xs-6 col-sm-7 no-padding">
+                  <img class="follower-icon" ng-src="{{ follower.profile_picture }}" alt="follower">
+                  <div class="follow-me">
+                    <p>{{ follower.name }} {{ follower.surname }}</p>
+                    <p class="contr-date">@{{ follower.username }}</p>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-5 no-padding text-right">
+                    <button ng-show="!follower.follow_status" ng-click="vm.toggleFollow(follower)" class="button button-follows-b">{{'profile.followers.follow' | translate}}</button>
+                    <button ng-show="follower.follow_status" ng-click="vm.toggleFollow(follower)" class="button button-follows-r">{{'profile.followers.unfollow' | translate}}</button>
+                  <a ui-sref="public.overview({id:'{{follower.id}}'})">
+                    <img src="/img/icons/icon_small_chevron_dark_right.svg">
+                  </a>
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+        <!-- / my followers section -->
+    </div>
+    <!-- / Follows -->
+</div>

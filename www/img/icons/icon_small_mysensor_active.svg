@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Icon_Small_MySensor_Active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Icon_Small_MySensor_Active" fill="#FF6666">
+            <path d="M12.9999594,17 C12.995096,16.4384685 12.5533909,16 12.009222,16 L7.99077797,16 C7.45400247,16 7.00506105,16.4468553 7.00004249,17 L5.00247329,17 C4.44882258,17 4,16.5500512 4,15.9931545 L4,15 C5.1045695,15 6,14.1045695 6,13 C6,11.8954305 5.1045695,11 4,11 L4,4.00684547 C4,3.45078007 4.45576096,3 5.00247329,3 L14.9975267,3 C15.5511774,3 16,3.44994876 16,4.00684547 L16,11 C14.8954305,11 14,11.8954305 14,13 C14,14.1045695 14.8954305,15 16,15 L16,15.9931545 C16,16.5492199 15.544239,17 14.9975267,17 L12.9999594,17 Z M10,9 C11.1045695,9 12,8.1045695 12,7 C12,5.8954305 11.1045695,5 10,5 C8.8954305,5 8,5.8954305 8,7 C8,8.1045695 8.8954305,9 10,9 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

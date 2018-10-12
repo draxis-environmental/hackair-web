@@ -1,0 +1,29 @@
+<container-fluid>
+  <form class="reset-form form" name="deleteForm">
+    <div class="reset">
+      <h3>{{'communities.edit.delete.delete_your_community_heading' | translate}}</h3>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="auth-input">
+            <div class="auth-input-icon">
+              <img src="img/icon_user.svg" />
+            </div>
+            <input type="text" name="delete_word" ng-model="vm.delete_word" compare-to="vm.word_for_delete" required>
+            <span class="auth-input-label" ng-hide="deleteForm.delete_word.$invalid && deleteForm.delete_word.$touched" ng-show="deleteForm.delete_word.$valid && deleteForm.delete_word.$touched" aria-label="Username">{{ 'communities.edit.delete.write_hackair' | translate }}</span>
+          </div>
+          <div class="input-error" ng-messages="deleteForm.delete_word.$touched && deleteForm.delete_word.$error" role="alert">
+            <div ng-message="required">{{'communities.edit.delete.word_required' | translate}}</div>
+            <div ng-message="compareTo">{{'communities.edit.delete.word_no_match' | translate}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-8 ">
+          <div class="auth-actions text-right">
+            <button class="btn btn-danger" ng-click="vm.deleteCommunity()">{{ 'communities.edit.delete.delete_button' | translate }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</container-fluid>

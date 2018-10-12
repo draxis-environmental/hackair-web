@@ -1,0 +1,90 @@
+<ion-view hide-nav-bar="true">
+    <ion-content class="padding bg-intro">
+        <div class="logo-sm">
+            <img src="img/logo_hack_a_i_r_small_rect_light_b_g.svg" />
+        </div>
+        <div class="auth-tabs-container">
+            <div class="auth-tabs-nav">
+                <a ng-class="{'auth-tab-nav-active': vm.isTabActive('login')}" class="auth-tab-nav auth-tab-nav-active" ng-click="vm.setTabActive('login')">
+                    <span class="tab-title ng-binding">{{ 'auth.login' | translate }}</span>
+                </a>
+                <a ng-class="{'auth-tab-nav-active': vm.isTabActive('register')}" class="auth-tab-nav" ng-click="vm.setTabActive('register')">
+                    <span class="tab-title ng-binding">{{ 'auth.register' | translate }}</span>
+                </a>
+            </div>
+
+            <div class="auth-tabs-content" ng-class="{'auth-tab-login-height': vm.isTabActive('login'), 'auth-tab-register-height': vm.isTabActive('register')}">
+                <!-- Login form -->
+                <div class="auth-tab-login auth-tab-active" ng-class="{'auth-tab-active': vm.isTabActive('login')}">
+                    
+                    <div class="auth-input">
+                        <div class="auth-input-icon">
+                            <img src="img/icon_email.svg" />
+                        </div>
+                        <input type="email" ng-model="vm.user.email">
+                        <span class="auth-input-label" aria-label="Email">{{ 'auth.email' | translate }}</span>
+                    </div>
+
+                    <div class="auth-input">
+                        <div class="auth-input-icon">
+                            <img src="img/icon_password.svg" />
+                        </div>
+                        <input type="password" ng-model="vm.user.password">
+                        <span class="auth-input-label" aria-label="Password">{{ 'auth.password' | translate }}</span>
+                    </div>
+
+                    <div class="auth-actions">
+                        <a href="#" class="assertive">{{ 'auth.forgot_password' | translate }}</a>
+                        <button class="button button-calm" ng-click="vm.login()">{{ 'auth.login' | translate }}</button>
+                    </div>
+
+                </div>
+                
+                <!-- Registration form -->
+                <div class="auth-tab-register" ng-class="{'auth-tab-active': vm.isTabActive('register')}">
+                    <div class="auth-input">
+                        <div class="auth-input-icon">
+                            <img src="img/icon_user.svg" />
+                        </div>
+                        <input type="text" ng-model="vm.user.username">
+                        <span class="auth-input-label" aria-label="Username">{{ 'auth.username' | translate }}</span>
+                    </div>
+                    <div class="auth-input">
+                        <div class="auth-input-icon">
+                            <img src="img/icon_email.svg" />
+                        </div>
+                        <input type="email" ng-model="vm.user.email">
+                        <span class="auth-input-label" aria-label="Email">{{ 'auth.email' | translate }}</span>
+                    </div>
+                    <div class="auth-input">
+                        <div class="auth-input-icon">
+                            <img src="img/icon_password.svg" />
+                        </div>
+                        <input type="password" ng-model="vm.user.password">
+                        <span class="auth-input-label" aria-label="Password">{{ 'auth.password' | translate }}</span>
+                    </div>
+                    <div class="auth-input">
+                        <div class="auth-input-icon">
+                            <img src="img/icon_repeat.svg" />
+                        </div>
+                        <input type="password" ng-model="vm.user.confirm">
+                        <span class="auth-input-label" aria-label="Repeat password">{{ 'auth.repeat_password' | translate }}</span>
+                    </div>
+                    <div class="auth-input">
+                        <div class="auth-input-icon">
+                            <img src="img/icon_repeat.svg" />
+                        </div>
+                        <input type="checkbox" ng-model="vm.user.permission">
+                        <span class="auth-input-label" aria-label="Permission">{{ 'auth.repeat_password' | translate }}</span>
+                    </div>
+
+                    <div class="auth-actions">
+                        <button class="button button-calm" ng-click="vm.register()">{{ 'auth.register' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </ion-content>
+</ion-view>

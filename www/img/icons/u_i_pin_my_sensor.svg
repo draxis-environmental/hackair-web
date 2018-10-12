@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24px"
+   height="36px"
+   viewBox="0 0 24 36"
+   version="1.1"
+   id="svg21"
+   sodipodi:docname="u_i_pin_my_sensor.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>B8AF0227-C51F-4C8D-BAA9-4055C4C36014</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview23"
+     showgrid="false"
+     inkscape:zoom="6.5555556"
+     inkscape:cx="12"
+     inkscape:cy="18"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg21" />
+  <!-- Generator: sketchtool 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">B8AF0227-C51F-4C8D-BAA9-4055C4C36014</title>
+  <desc
+     id="desc4">Created with sketchtool.</desc>
+  <defs
+     id="defs7">
+    <path
+       d="M12,0 C8.82472727,0 5.92545455,1.10347826 3.83672727,3.10617391 C1.32654545,5.51347826 0,7.48395652 0,12 C0,21.8366087 10.5196364,35.0514783 10.9672727,35.537087 C11.2403636,35.8336957 11.6123636,36 12,36 C12.3876364,36 12.7596364,35.8336957 13.0327273,35.537087 C13.4803636,35.0514783 24,21.8366087 24,12 C24,7.48395652 22.6734545,5.51347826 20.1632727,3.10617391 C18.0745455,1.10347826 15.1752727,0 12,0 Z"
+       id="path-1" />
+  </defs>
+  <g
+     id="Pages"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       transform="translate(-470,-260)"
+       id="Map_Stuff">
+      <g
+         id="UI/UI_Pin_Sensor"
+         transform="translate(470,260)">
+        <g
+           id="Path">
+          <use
+             xlink:href="#path-1"
+             id="use9"
+             style="fill:#022b3a;fill-rule:evenodd"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <path
+             d="M 12.000021,34.43886 C 11.74081,34.126802 11.009616,33.174386 10.283146,32.162833 9.0292225,30.416843 7.7712933,28.503212 6.6107003,26.518093 3.4075004,21.039229 1.5,15.988679 1.5,12 1.5,8.3269183 2.2872269,6.6704743 4.8749705,4.188787 6.6769631,2.4610158 9.2024167,1.5 12,1.5 c 2.797583,0 5.323037,0.9610158 7.125145,2.6888976 C 21.712773,6.6704743 22.5,8.3269183 22.5,12 c 0,3.988679 -1.9075,9.039229 -5.1107,14.518093 -1.160593,1.985119 -2.418522,3.89875 -3.672446,5.64474 -0.726834,1.012061 -1.458397,1.964925 -1.716833,2.276027 z"
+             id="path11"
+             inkscape:connector-curvature="0"
+             style="stroke:#022b3a;stroke-width:3" />
+        </g>
+        <g
+           id="Icons/Icon_Small_MyPhotos_Active"
+           transform="translate(2,2)"
+           style="fill:#ff6666;fill-rule:evenodd" />
+      </g>
+    </g>
+  </g>
+  <g
+     id="Symbols"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+     transform="translate(1.8983054,2.8135593)">
+    <g
+       id="Icons/Icon_Small_MySensor_Active"
+       style="fill:#ff6666">
+      <path
+         id="Combined-Shape-5"
+         d="m 12.999959,17 c -0.0049,-0.561532 -0.446568,-1 -0.990737,-1 H 7.990778 C 7.4540025,16 7.005061,16.446855 7.0000425,17 H 5.0024733 C 4.4488226,17 4,16.550051 4,15.993154 V 15 C 5.1045695,15 6,14.10457 6,13 6,11.895431 5.1045695,11 4,11 V 4.0068455 C 4,3.4507801 4.455761,3 5.0024733,3 H 14.997527 C 15.551177,3 16,3.4499488 16,4.0068455 V 11 c -1.104569,0 -2,0.895431 -2,2 0,1.10457 0.895431,2 2,2 v 0.993154 C 16,16.54922 15.544239,17 14.997527,17 Z M 10,9 C 11.10457,9 12,8.1045695 12,7 12,5.8954305 11.10457,5 10,5 8.8954305,5 8,5.8954305 8,7 8,8.1045695 8.8954305,9 10,9 Z"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

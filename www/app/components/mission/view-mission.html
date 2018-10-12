@@ -1,0 +1,25 @@
+<div class="mission-modal">
+  <button style="position: absolute; z-index: 1; right: 5px; top: 8px; width: 30px;" type="button" ng-click="ok()" class="close" >&times;</button>
+
+  <!--<ui-view></ui-view>-->
+  <div class="row rm-margin-right">
+    <div class="col-xs-12 col-sm-5 no-right-padding">
+      <uib-tabset active="0">
+        <uib-tab index="0" heading="New"><div ng-include="'app/components/mission/tabs/new-mission.html'"></div></uib-tab>
+        <uib-tab index="1" heading="Available"><ng-include src="'app/components/mission/tabs/available-mission.html'"></uib-tab>
+        <uib-tab index="2" heading="Completed"><ng-include src="'app/components/mission/tabs/completed-mission.html'"></uib-tab>
+      </uib-tabset>
+    </div>
+    <div class="col-xs-12 col-sm-7 border-left text-center">
+      <div class="mission-title"><h6>{{vm.testMissions[vm.currentMissionID].fullTitle}}</h6></div>
+
+      <a ui-sref="{{vm.testMissions[vm.currentMissionID].actionState}}"><img ng-click="ok()" class="img-responsive" src="{{vm.testMissions[vm.currentMissionID].image}}"></a>
+
+      <div class="mission-text" ng-bind-html="vm.testMissions[vm.currentMissionID].fullText">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+

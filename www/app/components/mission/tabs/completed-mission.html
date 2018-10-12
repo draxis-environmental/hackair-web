@@ -1,0 +1,16 @@
+<div class="mission-items">
+  <div class="row mission-item" ng-repeat="mission in vm.testMissions ">
+    <a ng-click="vm.updateMissionView(mission.id)">
+      <div class="col-xs-2 no-right-padding text-center">
+        <img src="../../img/temp/bullseye.png">
+      </div>
+      <div class="col-xs-8 no-padding">
+        <p class="short-info"><span class="mission-title">{{mission.shortTitle}}</span><br>
+        {{mission.shortInfo}}</p>
+      </div>
+      <div class="col-xs-2">
+        <img class="chevron" src="../../img/icons/icon_small_chevron_dark_right.svg">
+      </div>
+    </a>
+  </div>
+</div>

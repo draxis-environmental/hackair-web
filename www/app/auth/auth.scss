@@ -1,0 +1,264 @@
+@import '../../../scss/base.scss';
+.login-section, .reset-section {
+  background-color: white;
+  width: 320px;
+  & h2, & h4 {
+    font-family: 'noto_sansbold';
+    font-size: 14px;
+    color: $teal-blue;
+    margin: 30px;
+  }
+
+  & h4 {
+    padding-bottom: 30px;
+    margin-bottom:0px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.social-login {
+  & h2 {
+    text-align: left;
+    margin: 10px 30px;
+  }
+  & button {
+    margin: 10px;
+  }
+  padding:10px;
+  text-align: center;
+  background: $azureish-white;
+  border-top: solid 1px #7fd1d6;
+  border-bottom: solid 1px #7fd1d6;
+}
+
+form {
+  & .input-error {
+    color: $assertive;
+    font-family: 'noto_sansregular';
+    font-size: 14px;
+    margin:0 0 0 20px;
+    height: 20px;
+  }
+}
+
+.login, .register, .reset, .forgot {
+  padding:10px;
+  & .auth-input {
+    position: relative;
+    margin: 10px 20px 0 20px;
+    border-bottom: solid 2px $teal-blue;
+
+    & .auth-input-icon {
+      position: relative;
+      display: inline-block;
+      font-size: 2em;
+      top: 7px;
+      border-radius: 50%;
+      height: 22px;
+      width: 22px;
+    }
+
+    & .auth-input-label {
+      position: absolute;
+      bottom: -25px;
+      left: 0px;
+      color: #b4b4b4;
+      font-size: 14px;
+    }
+
+    & input {
+      display: inline-block;
+      width: 85%;
+      font-size: 14px;
+      box-shadow: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  & .auth-actions {
+    position: relative;
+    margin: 30px;
+
+    & a,
+    & a:active,
+    & a:hover,
+    & a:focus {
+      text-decoration: none;
+    }
+
+    & button {
+      float: right;
+      font-size: 1em;
+      font-weight: 500;
+      text-transform: uppercase;
+      min-height: 35px;
+      max-height: 35px;
+      vertical-align: middle;
+      margin: 0 0 20px 0;
+      line-height: 1px;
+    }
+  }
+
+  & h3 {
+    font-family: 'noto_sansbold';
+    font-size: 16px;
+    color: $teal-blue;
+    text-align: left;
+    padding-left: 12%; /*temp*/
+    margin: 20px 0 0 0;
+  }
+
+  @media (max-width: 400px) {
+    & input {
+      width:auto;
+    }
+
+    & .auth-input {
+      margin: 7px auto;
+    }
+
+    & h3 {
+      text-align: left;
+      padding-left: 0; /*temp*/
+      text-align: center;
+    }
+
+    & h2 {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    & button {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+
+.register-form, .reset-form {
+  background-color: white;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding-top: 10px;
+
+  & h2 {
+    font-family: 'noto_sansbold';
+    font-size: 14px;
+    color: $teal-blue;
+    margin: 0px;
+    padding-left: 10%;
+  }
+
+  & h6 {
+    font-family: 'noto_sansregular';
+    font-size: 10px;
+    color: $teal-blue;
+    letter-spacing: 0.25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .register-form {
+    min-width: 400px;
+  }
+}
+
+.forgot-form {
+  background-color: white;
+  & .forgot-section {
+    padding:25px;
+
+    & h3 {
+      font-family: 'noto_sansbold';
+      font-size: 12px;
+      text-align: center;
+      color: #ff5958;
+      padding:0;
+    }
+
+    & p {
+      font-family: 'noto_sansregular';
+      font-size: 12px;
+      text-align: center;
+      color: #030303;
+      margin-top:20px;
+      margin-bottom: 0px;
+    }
+
+    & img {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    & .auth-input {
+      margin-top: 0px;
+    }
+
+    & button {
+      float:none;
+      margin-top: 20px;
+      margin-right: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}
+
+section.user-action {
+  background: #71C9CE;
+  background-image: url("../../img/BG_CityscapeBig@2x.png"); /* fallback */
+  background-image: url("../../img/BG_CityscapeBig@2x.png"), linear-gradient(#71C9CE, #deeced); /* W3C */
+  background-repeat: no-repeat;
+  & .panel{
+    padding: 20px 40px;
+    margin-top: 110px;
+    margin-bottom: 140px;
+    min-height: 280px;
+
+    & h3 {
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 28px;
+      color: $teal-blue;
+      margin-top: 20px;
+    }
+
+    & .btn {
+      text-transform: uppercase;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    & input {
+      width: 45%;
+      min-width: 200px;
+    }
+  }
+
+  & .reset-form {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+
+.forgot-form {
+  min-width: 300px;
+}
+
+
+
+
+
+
+

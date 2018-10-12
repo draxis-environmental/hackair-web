@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Icon_Small_OpenData_Inactive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.17866428,9.24040308 C5.8168369,9.08566111 5.41842206,9 5,9 C3.34314575,9 2,10.3431458 2,12 C2,13.6568542 3.34314575,15 5,15 L16,15 C17.1045695,15 18,14.1045695 18,13 C18,11.8954305 17.1045695,11 16,11 C15.6051372,11 15.2370009,11.1144295 14.9269432,11.3119364 C14.9749334,11.0485742 15,10.7772144 15,10.5 C15,8.01471863 12.9852814,6 10.5,6 C8.45195137,6 6.72345871,7.36818178 6.17866428,9.24040308 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="18" height="11">
+            <rect x="1" y="5" width="18" height="11" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Icon_Small_OpenData_Inactive" stroke="#00A3AC" stroke-width="2">
+            <use id="Combined-Shape" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

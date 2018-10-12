@@ -1,0 +1,44 @@
+<profile-navigation></profile-navigation>
+<div class="tab-content">
+    <!-- Perceptions -->
+    <div role="tabpanel" class="tab-pane active" id="perceptions">
+      <div class="content">
+        <h3>{{'profile.perceptions.my_perceptions_heading' | translate}}</h3>
+        <!--<div class="row">
+          <div class="col-xs-12 col-sm-8">
+          </div>
+           <div class="col-xs-12 col-sm-4">
+              <button class="button button-perception pull-right">ADD PERCEPTION</button>
+          </div>
+        </div> -->
+        <!-- map view -->
+        <!-- <div class="row">
+            <div class="col-xs-12 perception-map">
+            <img src="../../img/u_i_pin_perception.svg">
+            </div>
+        </div> -->
+        <!-- / map view-->
+        <!-- rows of perceptions-->
+        <div class="row">
+            <!-- for each perception  -->
+            <div class="col-xs-12 col-sm-6 " ng-repeat="perception in vm.perceptions">
+              <div class="row">
+                  <div class="col-xs-2 no-padding text-right">
+                    <img src="/img/icons/icon_small_pin_inactive.svg" class="perception-pin" alt="pin">
+                  </div>
+                  <div class="col-xs-7 no-padding">
+                    <p style="text-transform: capitalize;">{{perception.perception }}</p>
+                    <p class="contr-date">{{perception.created_at | date}}</p>
+                  </div>
+                  <div class="col-xs-3 no-padding">
+                    <img src="/img/airquality/illustration_face_{{perception.perception}}.png" alt="smiley" height="40px" width="40px">
+                  </div>
+              </div>
+            </div>
+            <!-- / for each perception -->
+
+        </div>  <!-- / rows of perceptions-->
+      </div>
+    </div>
+    <!-- / Perceptions -->
+</div>

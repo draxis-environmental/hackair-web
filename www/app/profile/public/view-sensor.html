@@ -1,0 +1,52 @@
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a ui-sref="profile.overview" aria-controls="overview" role="tab">{{'profile.navigation.overview' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="profile.achievements" aria-controls="achievements" role="tab" data-toggle="tab">{{'profile.navigation.achievements' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="profile.photos" aria-controls="photos" role="tab" data-toggle="tab">{{'profile.navigation.photos' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="profile.perceptions" aria-controls="perceptions" role="tab" data-toggle="tab">{{'profile.navigation.perceptions' | translate}}</a></li>
+    <li role="presentation" class="active"><a ui-sref="profile.sensors" aria-controls="sensors" role="tab" data-toggle="tab">{{'profile.navigation.sensors' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="profile.followers" aria-controls="followers" role="tab" data-toggle="tab">{{'profile.navigation.followers' | translate}}</a></li>
+</ul>
+<div class="tab-content">
+<!-- Sensors -->
+  <div role="tabpanel" class="tab-pane active" id="sensors">
+    <div class="row">
+      <div class="col-xs-8 col-sm-8">
+        <h3><a href="/profile/sensors"><img src="../../../img/temp/arrow_left.png"></a>{{vm.sensor.name}}</h3>
+      </div>
+      <div class="col-xs-4 col-sm-4">
+        <button class="button button-calm button-edit" ng-click="vm.editSensor()">{{'sensor.edit' | translate}}</button>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 text-right">
+          <span class="access-key"> {{'sensor.access_key' | translate}}: {{vm.sensor.access_key}}</span>
+        </div>
+    </div>
+    <!-- map view -->
+    <div class="row">
+      <div class="col-xs-12 sensor-map" id="map">
+
+      </div>
+    </div>
+    <!-- / map view -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <h2>{{'sensor.sensor_measurements_heading' | translate}}</h2>
+      </div>
+      <div class="col-xs-12 col-sm-4 ">
+        <button class="button button-follows-b pull-right">{{'sensor.export_data' | translate}}</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 vertical-line">
+        <ul class="no-padding">
+          <li class="measurement" ng-repeat="measurement in vm.sensor.measurements"><span class="log-title">{{ measurement.date_str | date : 'yyyy/MM/dd @ HH:mm' }}</span> {{measurement.pollutant_i.name.split('_')[0] + ' : ' + measurement.pollutant_i.index}}</li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 vertical-line">
+      </div>
+      <div class="col-xs-12 col-sm-4 vertical-line">
+      </div>
+    </div>
+  </div>
+</div>

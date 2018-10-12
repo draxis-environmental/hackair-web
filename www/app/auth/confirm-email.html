@@ -1,0 +1,37 @@
+<container-fluid>
+  <section class="user-action">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+        <div class="panel" ng-model="confirmed">
+          <form name="confirmEmailForm" class="confirmEmailForm" ng-show="confirmed=='confirm'">
+            <h3>{{'auth.confirm_email.heading' | translate}}</h3>
+            <p>{{'auth.confirm_email.confirm_email_to_register' | translate}}</p>
+            <div class="auth-input">
+              <button class="btn btn-primary">{{'auth.confirm_email.confirm' | translate}}</button>
+            </div>
+          </form>
+          <div ng-show="confirmed=='true'" class='row'>
+            <div class="col-xs-12">
+              <h3>{{'auth.confirm_email.confirmed' | translate}}</h3>
+              <p>{{'auth.confirm_email.successful_registration' | translate}}<br> {{'auth.confirm_email.you_can_now_login' | translate}}</p>
+            </div>
+            <div class="col-xs-6 col-xs-offset-3 text-center">
+              <img src="../../img/ui/illustration_face_perfect.png">
+            </div>
+          </div>
+           <div ng-show="confirmed=='false'" class='row'>
+            <div class="col-xs-12">
+              <h3>{{'auth.confirm_email.email_not_confirmed' | translate}}</h3>
+              <p>{{'auth.confirm_email.click_activation_link_again' | translate}}</p>
+
+            </div>
+            <div class="col-xs-6 col-xs-offset-3 text-center">
+              <img src="../../img/ui/illustration_face_medium.png">
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer-section></footer-section>
+</container-fluid>

@@ -1,0 +1,31 @@
+<!-- Nav tabs -->
+
+<profile-navigation></profile-navigation>
+<div class="tab-content">
+    <!-- Overview Tab -->
+
+    <div role="tabpanel" class="tab-pane active" id="overview">
+        <div class="content contributions">
+            <h3>{{'profile.contributions_heading' | translate}}</h3>
+
+            <!-- for each row of contributions -->
+        <div class="row">
+                <!-- for each contribution -->
+
+                <div class="col-xs-12 col-sm-6 no-padding" ng-repeat="contribution in vm.contributions | limitTo: 10">
+                    <div class="row">
+                        <div class="col-xs-9 no-padding">
+                            <p> {{ contribution.name }} {{ contribution.action }}</p>
+                            <p class="contr-date">{{ contribution.updated_at }}</p>
+                        </div>
+                        <div class="col-xs-3 no-padding">
+                            <img class="img-responsive" ng-if="contribution.social_activity_type == 'UpdateProfilePicture' || contribution.social_activity_type == 'UploadSkyPhoto'" ng-src="{{contribution.object_metadata.sky_photo_thumb}}" alt="photo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- / Overview Tab -->
+</div>

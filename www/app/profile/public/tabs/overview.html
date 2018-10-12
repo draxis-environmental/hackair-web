@@ -1,0 +1,50 @@
+<!-- Nav tabs -->
+
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a ui-sref="public.overview" aria-controls="overview" role="tab">{{'profile.navigation.overview' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.achievements" aria-controls="achievements" role="tab">{{'profile.navigation.achievements' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.photos" aria-controls="photos" role="tab">{{'profile.navigation.photos' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.perceptions" aria-controls="perceptions" role="tab">{{'profile.navigation.perceptions' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.sensors" aria-controls="sensors" role="tab">{{'profile.navigation.sensors' | translate}}</a></li>
+    <li role="presentation"><a ui-sref="public.followers" aria-controls="followers" role="tab">{{'profile.navigation.followers' | translate}}</a></li>
+</ul>
+<div class="tab-content">
+    <!-- Overview Tab -->
+
+    <div role="tabpanel" class="tab-pane active" id="overview">
+        <div class="content contributions">
+          <h3>{{'profile.contributions_heading' | translate}}</h3>
+
+            <!-- for each row of contributions -->
+          <div class="row">
+                <!-- for each contribution -->
+
+            <div class="col-xs-12 col-sm-6 no-padding" ng-repeat="contribution in vm.profile.social_feed.data">
+              <div class="row">
+                <div class="col-xs-9 no-padding">
+                  <p> {{ contribution.name }} {{ contribution.action }}</p>
+                  <p class="contr-date">{{ contribution.updated_at }}</p>
+                </div>
+                <div class="col-xs-3 no-padding">
+                  <img ng-if="contribution.action == 'has uploaded a photo.' || contribution.action == 'has uploaded 2 new sky photos.'" ng-src="{{contribution.object_metadata.sky_photo_thumb}}" alt="taken photo">
+                </div>
+              </div>
+            </div>
+
+            </div>
+        </div>
+        <hr class="soft-separator">
+        <div class="content contributions">
+          <h3>{{'profile.photos_per_day' | translate}}</h3>
+
+            <!-- for each row of contributions -->
+          <div class="row">
+                  <!-- for each contribution -->
+
+          </div>
+        </div>
+    </div>
+
+    <!-- / Overview Tab -->
+
+</div>

@@ -1,0 +1,71 @@
+/* navigation styling */
+
+.navbar-brand {
+
+    margin-left: 40px;
+    padding: 4px;
+    height: 72px;
+
+    & img {
+        height: 64px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+  .navbar-nav {
+    & li > a {
+      &.active {
+        font-family: 'noto_sansbold';
+        font-weight: bolder;
+
+        &.active:after,
+        &.active:hover:after,
+        &.active:focus:after {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+.navbar-nav {
+    font-family: "Roboto";
+    letter-spacing: -0.25px;
+
+    &.landing-nav {
+        font-size: 19px;
+        margin-right: 80px;
+        font-weight: 500;
+    }
+
+    &.app-nav {
+        font-size: 16px;
+        font-weight: normal;
+
+        & > li > a {
+            &.active {
+                font-weight: bolder;
+            }
+            &.active:after,
+            &.active:hover:after,
+            &.active:focus:after {
+                border-bottom: 1px transparent;
+            }
+
+            & img {
+                display: inline-block;
+                margin-right: 5px;
+                box-shadow: 0 0 2px;
+            }
+        }
+    }
+
+
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 0px 0px;
+  margin: 20px 15px;
+}
