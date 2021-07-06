@@ -1,5 +1,8 @@
 # hackAIR web app
 
+## Deprecation notice
+This is an old version of the hackAIR web application, and is not actively supported.
+
 ## Description
 The hackAIR web app enables communitites of citizens to set up an air quality monitoring network by collecting, fusing, publishing and visualizing air pollution data. 
 The app has been developed based on Angular v1.
